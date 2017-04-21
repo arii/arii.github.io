@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ariel S Anders - Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+   <!-- <link href="css/blog.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<p id="NUM_BLOGS">6</p>
+
+    <div class="brand">Ariel S Anders</div>
+    <div class="address-bar">32 Vassar St. 32-G418 | Cambridge, MA 02139 | aanders@csail.mit.edu</div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Ariel S. Anders</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="resume.html">Resume</a>
+                    </li>
+                    
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+          
+	<div class="container" id="blogbody">	  
+		<div class="row">
+			<div class="box">     
+                        
+                <div class="col-lg-12 text-center">
+                    <hr>
+                    <h2 class="intro-text text-center">Ari's
+                        <strong>blog</strong>
+                    </h2>
+                    <hr>
+                </div>
+				
+                <div id="content" >
+                </div>
+				
+              	<div class="col-lg-12 text-center">
+				<hr>
+                    <h2 >All Posts
+                    </h2>
+                    <hr>
+					<ul class="sidebar-nav" id="all_posts">
+				</div>  
+				
+               <div class="col-lg-12 text-center">
+                    <ul class="pager">
+                        <li class="previous"><a href="#">&larr; Older</a>
+                        </li>
+                        <li class="next"><a href="#">Newer &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+				
+            </div>
+        </div>
+	</div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Ariel S Anders 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+	<p id="currPost"></p>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- update blog text -->
+    <script>
+        $(document).ready(function() {
+               //$("#content").load("file:///home/ari/Desktop/new_website/blog/test_0.html #content");
+                var loc =window.location.href;
+                var dir = loc.substring(0, loc.lastIndexOf('/'));
+                var num_blogs = parseInt($("#NUM_BLOGS").text());
+                $("#NUM_BLOGS").hide();
+                $("#currPost").hide();
+
+
+                var searching = true;
+                var i = 0;
+                var posts = $("#all_posts");
+
+
+
+                function load(post_id, inc){
+                    
+                    num = parseInt(post_id.substring("post".length, post_id.length));
+                    num += inc;
+                    if (num >= 0 && num<num_blogs){
+
+                        $("#content").empty();
+                        post = dir + "/blog/"+num+".html";
+                        $("#content").load(post + " #content");
+                         if (num == 0){
+                            $(".previous").hide();
+                            }
+                         else{
+                            $(".previous").show();
+                         }
+                         if (num == num_blogs-1){
+                             $(".next").hide();
+                            }
+                         else{
+                            $(".next").show();
+                         }
+                    }
+                    $("#currPost").text(num);
+
+                };
+                
+                names = loc.split("#");
+                first_post = num_blogs-1;
+                if (names.length == 2){
+                    num = parseInt(names[1]);
+					console.log(num);
+                    if (!isNaN(num)){
+                        first_post = num;
+                    }
+                }
+                        
+                load("post"+first_post,0);
+			
+				for (var i = 0; i < num_blogs; i++){
+					var post = dir + "/blog/"+i+".html";
+					var add = "<li><a href='#"+i+"'  class='ispost' id='post"+i+"'> </a>";
+					posts.append(add);
+					curr = $("#post"+i);
+					curr.load(post + " #title");
+					curr.click(function(){
+                            post_id = $(this).attr('id');
+                            load(post_id,0);
+                                });
+									
+                    }
+				
+                
+                $(".next").click(function(){
+                        post_id = "post" + $("#currPost").text();
+                        load(post_id, 1);
+
+                        });
+
+                $(".previous").click(function(){
+                        post_id = "post" + $("#currPost").text();
+						console.log(post_id);
+                        load(post_id,-1);
+
+
+
+                    });
+
+                
+
+                });
+
+
+    </script>
+
+
+</body>
+
+</html>
