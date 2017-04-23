@@ -5,7 +5,7 @@
 \usepackage{enumerate}
 \usepackage{fancyhdr}
 \usepackage[resetlabels]{multibib}
-
+\usepackage{tabularx}
 \usepackage{geometry} % to change the page dimensions
 \geometry{a4paper}
 \geometry{margin=1in} 
@@ -50,7 +50,7 @@
 \namestyle Ariel S. Anders \\[0.3em]
 \deptstyle Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology \\[0.2em]
 \addressstyle Address: 32 Vassar Street 32-G418 Cambridge, MA 02139\\
-Email: aanders@csail.mit.edu \ $\cdot$ Web: www.people.csail.mit.edu/aanders
+aanders@csail.mit.edu \ $\cdot$ www.people.csail.mit.edu/aanders
 \end{center}
 
 
@@ -69,9 +69,9 @@ Ariel Anders
 % Print title.
 \begin{center}
 \namestyle Ariel S. Anders \\[0.3em]
-\deptstyle Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology \\[0.2em]
+\deptstyle Ph.D. Candidate  at  Massachusetts Institute of Technology \\Department of Electrical Engineering and Computer Science\\[0.2em]
 \addressstyle Address: 32 Vassar Street 32-G418 Cambridge, MA 02139\\
-Email: aanders@csail.mit.edu \ $\cdot$ Web: www.people.csail.mit.edu/aanders
+    aanders@csail.mit.edu \ $\cdot$ www.people.csail.mit.edu/aanders
 \end{center}
 %I'm a roboticist with experience in  planning under uncertainty, robotic manipulation, autonomous vehicles, multi-robot planning, and dental robotic surgery. I have competed and placed in 4 tech competitions and have a 4+ star app on the iOS store to help blind people detect different levels of light. I'm currently working on making a lab on campus more energy efficient and spearheaded a project to install artificial lightboxes on campus to ameliorate effects of Seasonal Affection Disorder. I'm passionate about teaching and have years of experience instructing high-school through college age students. 
 
@@ -94,15 +94,15 @@ Email: aanders@csail.mit.edu \ $\cdot$ Web: www.people.csail.mit.edu/aanders
 	\end{itemize}
 	\item {\bf GPA:  4.9/5.0 }
 	\item {\bf Relevant Coursework}\\
-	  \begin{tabular}{l l}
+        \begin{tabularx}{\textwidth}{l l}
       6.867: Machine Learning 
       & \hfill 6.831: User Interface Design and Implementation\\
       6.375: Design of Complex Digital Systems
       & \hfill 6.852: Distributed Algorithms\\
       16.31: Feedback and Control Systems
       & \hfill 2.166 Autonomous Vehicles\\
-      6.811 Principles and Practices of Assistive Technology
-     \end{tabular}
+      %6.811 Principles and Practices of Assistive Technology
+     \end{tabularx}
 \end{itemize}
 
 \subparagraph{University of California, Santa Cruz $\cdot$ Santa Cruz, CA }
@@ -117,50 +117,21 @@ Email: aanders@csail.mit.edu \ $\cdot$ Web: www.people.csail.mit.edu/aanders
         \item {\bf Senior Design Capstone Project}\\
     Team project to improve the performance of arithmetic functions for Oracle numbers within the Oracle Database; this software development project was completely done in C on x86 and ARM processors using code profilers to find performance bottle necks and applying vectorized hardware instructions (SSE) and different number representations to achieve speedup. 
     	\item {\bf Relevant Coursework}\\
-    \begin{tabular}{l l}
+    \begin{tabularx}{\textwidth}{l l}
     CMPE 215: Models of Robotic Manipulation & \hfill CMPE 118: Introduction to Mechatronics \\
     CMPE 121: Microprocessor System Design & \hfill CMPE 110: Computer Architecture \\
     CMPE 100: Logic Design & \hfill EE 101: Electornic Circuits \\
      AMS 114: Introduction to Dynamical Systems & \hfill EE 103: Signals and Systems \\
     EE 154: Feedback Control Systems & \hfill CMPS 101: Algorithms and Abstract Data Types\\
-        \end{tabular}
+        \end{tabularx}
 \end{itemize}
 
 
-
-
-\bibliographystylej{IEEEtran}
-\bibliographystylec{IEEEtran}
-
-\nocitej{ijrr17}
-\nocitec{rss15}
-\nocitec{eaai17}
-\nocitec{dental}
-\nocitej{apl16}
-\nocitec{mems17}
-\nocitec{swag}
-\nocitec{isec17}
-
-
-\bibliographyj{ari}
-\bibliographyc{ari}
-
-\iffalse
-
-\section*{Publications}
-\begin{itemize}
-    \item ``Policy Search for Multi-Robot Coordination under Uncertainty", Chris Amato, George Konidaris, Ariel Anders, Gabriel Cruz, Jonathan How, Leslie Pack Kaelbling. In Robotics: Science and Systems XI (RSS), 2015. Nominated for best paper!
-    \item ``Learning a strategy for whole-arm grasping", Anders, Ariel. MS thesis, Massachusetts Institute of Technology, 2014.
-    \item ``Oracle Software: Improving Oracle Number Arithmetic", Brian Gold, Ariel Anders, Lincoln Thurlow, and Nathan Pemberton. Internal documentation, 2012.
-    \item ``Dynamic Registration for Dental Robotics", Ariel Anders, Jacob Rosen. National Society of Black Engineers Proceedings of 38th Annual Convention, 2012. 
-\end{itemize}
-\fi 
 
 \section*{Professional Experience}
-\subparagraph{Lead Technology Developer, Lab Energy Assessment Center (LEAC)}
-Massachusetts Institute of Technology $\cdot$ Cambridge, MA $\cdot$ January 2017- Present
+\subparagraph{Lead Technology Developer, LEAC} MIT $\cdot$ Cambridge, MA $\cdot$ January 2017- Present
 \begin{itemize}
-\item LEAC provides low cost and minimally invasive tools to detect and analyze energy inefficiencies. I develop scalable software for wireless power monitoring for tools. All software is available open source at \url{https://github.com/leac-mit}.
+    \item The Lab Energy Assessment Center (LEAC) provides low cost and minimally invasive tools to detect and analyze energy inefficiencies. I develop scalable software for wireless power monitoring for tools. All software is available open source at \url{https://github.com/leac-mit}.
 \item See \url{https://leac.mit.edu} for more information
 \end{itemize}
 
@@ -173,13 +144,13 @@ Santa Clara, CA $\cdot$ Summer 2014
 
 \section*{Research Experience}
 \subparagraph{Graduate Research Assistant, CSAIL}
-Massachusetts Institute of Technology $\cdot$ Cambridge, MA $\cdot$ Summer 2012 - Present
+MIT$\cdot$ Cambridge, MA $\cdot$ Summer 2012 - Present
 \begin{itemize}
 	\item Research focus: planning, reinforcement learning and robotic manipulation
 %	\item Used machine learning and Artificial Intelligence techniques to implement whole-limb manipulation for grasping large objects with the PR2 robot.
  \end{itemize}
  \subparagraph{Undergraduate Research, Bionics Lab}
-University of California, Santa Cruz $\cdot$ Santa Cruz, CA $\cdot$ Summer 2010 - Spring 2012
+UCSC $\cdot$ Santa Cruz, CA $\cdot$ Summer 2010 - Spring 2012
 \begin{itemize}
 	\item Advisor: Jacob Rosen 
      	\item Research focus: CAD/CAM applications in dentistry, autonomous control with mechanical systems, and UI development for robotic programs.
@@ -190,34 +161,34 @@ University of California, Santa Cruz $\cdot$ Santa Cruz, CA $\cdot$ Summer 2010 
 
 \section*{Teaching Experience}
 \subparagraph{6.141 Robotics: Science and Systems I}
-Massachusetts Institute of Technology $\cdot$ Spring 2017
+MIT$\cdot$ Spring 2017
 \begin{itemize}
 \item Course Description: Presents concepts, principles, and algorithms for sensing and computation related to the physical world. Topics include motion planning, geometric reasoning, kinematics and dynamics, state estimation, tracking, map building, manipulation, human-robot interaction, fault diagnosis, and embedded system development. Students specify and design a small-scale yet complex robot capable of real-time interaction with the natural world. 
 \end{itemize}
 \subparagraph{Beaverworks Summer Institute Lead Associate Instructor}
  $\cdot$ Summer 2016
 \begin{itemize}
-\item The Massachusetts Institute of Technology (MIT) Beaver Works (BW) Summer Institute is a 4-week residential STEM-based program for talented rising high school seniors (entering the 12th grade). This years exciting project is the MIT Mini Grand Prix Challenge, a hands-on, intensive 4-week program that will focus on demonstrating fast, autonomous navigation of small racecars in a complex environment. As lead associate instructor I lead a team of 6 associate instructors during the lab portions of the course.  Additionally, I assisted in creating lab curriculum throughout the course and lead the material creation for the computer vision session of the course. See racecar.mit.edu for more details.
+\item The MIT(MIT) Beaver Works (BW) Summer Institute is a 4-week residential STEM-based program for talented rising high school seniors (entering the 12th grade). This years exciting project is the MIT Mini Grand Prix Challenge, a hands-on, intensive 4-week program that will focus on demonstrating fast, autonomous navigation of small racecars in a complex environment. As lead associate instructor I lead a team of 6 associate instructors during the lab portions of the course.  Additionally, I assisted in creating lab curriculum throughout the course and lead the material creation for the computer vision session of the course. See racecar.mit.edu for more details.
 \end{itemize}
 \subparagraph{6.141 Robotics: Science and Systems I}
-Massachusetts Institute of Technology $\cdot$ Spring 2016
+MIT$\cdot$ Spring 2016
 \begin{itemize}
 \item Course Description: Presents concepts, principles, and algorithms for sensing and computation related to the physical world. Topics include motion planning, geometric reasoning, kinematics and dynamics, state estimation, tracking, map building, manipulation, human-robot interaction, fault diagnosis, and embedded system development. Students specify and design a small-scale yet complex robot capable of real-time interaction with the natural world. 
 \end{itemize}
 \subparagraph{6.01 Intro to EECS Teaching Assistant}
-Massachusetts Institute of Technology $\cdot$ Spring 2015
+MIT$\cdot$ Spring 2015
 \begin{itemize}
 \item Course Description: An integrated introduction to electrical engineering and computer science, taught using substantial laboratory experiments with mobile robots. Key issues in the design of engineered artifacts operating in the natural world: measuring and modeling system behaviors; assessing errors in sensors and effectors; specifying tasks; designing solutions based on analytical and computational models; planning, executing, and evaluating experimental tests of performance; refining models and designs. Issues addressed in the context of computer programs, control systems, probabilistic inference problems, circuits and transducers, which all play important roles in achieving robust operation of a large variety of engineered systems.
 \end{itemize}
 
 \subparagraph{Math Teaching Assistant}
-University of California, Santa Cruz  $\cdot$ Fall 2009 - Winter 2012
+UCSC $\cdot$ Fall 2009 - Winter 2012
 \begin{itemize}
 \item College math sections: Pre-Calculus and College Algebra. I prepared section material and lead sections. http://www2.ucsc.edu/lss/
 \end{itemize}
 
-\subparagraph{Academic Excellence Math Co-Leader}
-University of California, Santa Cruz  $\cdot$ Fall 2008 - Winter 2009
+\subparagraph{Academic Excellence Co-Leader}
+UCSC $\cdot$ Fall 2008 - Winter 2009
 \begin{itemize}
 \item College math sections: Pre-Calculus and Single Variable Differential Calculus.
 \item Held office hours and co lead math sections.
@@ -225,45 +196,46 @@ University of California, Santa Cruz  $\cdot$ Fall 2008 - Winter 2009
 \end{itemize}
 
 \subparagraph{Girls in Engineering Robotics Instructor}
-University of California, Santa Cruz $\cdot$ Summer 2009
+UCSC $\cdot$ Summer 2009
 \begin{itemize}
 \item Taught middle school girls how to program Lego Mindstorm Robots!
 \item Prepared course material on programming the robots and an introduction to Processing.
 \end{itemize}
 
 
+
+\bibliographystylej{IEEEtran}
+\bibliographystylec{IEEEtran}
+
+\nocitej{ijrr17}
+\nocitec{rss15}
+\nocitec{eaai17}
+\nocitec{dental}
+\nocitej{apl16}
+\nocitec{mems17}
+%\nocitec{swag}
+\nocitec{isec17}
+
+
+\bibliographyj{ari}
+\bibliographyc{ari}
+
+
+
 \section*{Research Fellowships}
 \subparagraph{Graduate Research Fellowships}
-Massachusetts Institute of Technology $\cdot$ Cambridge, MA 
+MIT$\cdot$ Cambridge, MA 
 \begin{itemize}
 \item GEM Ph.D. Engineering Fellowship Sponsored by Intel, Summer 2014
 \item  Edwin S. Webster Graduate Fellowship in Electrical Engineering, Spring 2013
 \item Lemelson Minority Graduate Fellowship, Fall 2012
 \end{itemize}
 \subparagraph{Undergraduate Research Fellowships}
-University of California, Santa Cruz $\cdot$ Santa Cruz, CA
+UCSC $\cdot$ Santa Cruz, CA
 \begin{itemize}
 \item Minority Access to Research Careers, Summer 2010- Spring 2012
 \item  Summer Undergraduate Research Fellowship in Information Technology, Summer 2010.  
 \end{itemize}
-
-\section*{Personal Projects Portfolio}
-\begin{itemize}
-\item RACECAR Web designer: \url{http://racecar.mit.edu}
-\item Boop Light Detector, iOS phone app (4+ review, over 500 downloads)
-\item Green Net - reducing energy consumption at MIT
-\item RoboCon 2016 Web Designer: http://robocon.mit.edu/
-\item Ariel Anders personal webpage: http://people.csail.mit.edu/aanders/
-\item Projects listed at http://people.csail.mit.edu/aanders/projects.html:
-\begin{itemize}
-\item drone line following project
-\item outreach game designed for UCSC Tau Beta PI
-\item mechatronics robot
-\item vibeaware
-\end{itemize}
-\item Open source software: https://github.com/arii
-\end{itemize}
-
 
 
 \section*{Honors and Awards}
@@ -272,18 +244,14 @@ University of California, Santa Cruz $\cdot$ Santa Cruz, CA
 \item 2017 Earth Day Mini Grant \\
 Award for developing new fume hood technologies, in partnership with LEAC at MIT.
 \item 2017 MIT Green Labs Innovation Award\\
-5000\$ Award received in collaboration with Daniel Preston and the Device Research Lab for developing most innovative technology to improve sustainability efforts at campus at MIT. 
+\$5000 Award received in collaboration with Daniel Preston and the Device Research Lab for developing most innovative technology to improve sustainability efforts at campus at MIT. 
+\item 2016 MIT EHS Green Lab Award \\
+    Received \$1000 in seed funding to create green lab technology. Award received in collaboration with Daniel Preston and the Device Research Lab. 
 \item MindHandHeart Innovation Fund Grant Recipient, Fall 2015\\
 ``Removing SAD from Winter", {\em Planning for public artificial lightbox locations on campus for people with Seasonal Affective Disorder }
 \item University Center of Exemplary Mentoring at MIT Scholar, Innaugural class of 2015.
 \end{itemize}
-\subparagraph{Tech Competitions}
-\begin{itemize}
-\item {\em Boop}, 4th place Assitive Technology Hackathon, Spring 2016
-\item {\em lingui-scense}, 1st place at Make Cool Shmit, Spring 2016
-\item {\em Haptic++}, 2nd place at Meet++ Hackathon, Spring 2016
-\item {\em Beer Bots,} 2nd place at CSAIL Research Highlights, Spring 2015 
-\end{itemize}
+
 \subparagraph{Academic Honors and Scholarships}
 \begin{itemize}
 \item MIT Graduate Women of Excellence, class of 2017 Honorees
@@ -301,6 +269,14 @@ Award for developing new fume hood technologies, in partnership with LEAC at MIT
 \item Special Merit in Research Award,  2011 CAMP Symposium 
 \item  National Poster Presentation Award, 2010 ABRCMS Annual Conference
 \item Best Poster Design, UCSC, 2010 Undergraduate Research Symposium
+\end{itemize}
+
+\subparagraph{Tech Competitions}
+\begin{itemize}
+\item {\em Boop}, 4th place Assitive Technology Hackathon, Spring 2016
+\item {\em lingui-scense}, 1st place at Make Cool Shmit, Spring 2016
+\item {\em Haptic++}, 2nd place at Meet++ Hackathon, Spring 2016
+\item {\em Beer Bots,} 2nd place at CSAIL Research Highlights, Spring 2015 
 \end{itemize}
 
 
@@ -341,6 +317,23 @@ Award for developing new fume hood technologies, in partnership with LEAC at MIT
 	\item \textbf{Embedded Systems} Arduino, Raspberry Pi, Jetson TX1, Pandaboard, Microchip PIC 32, Virtex5 FPGA, and  68HC11E1 Microcontroller 
 \end{itemize}
 
+
+\section*{Personal Projects Portfolio}
+\begin{itemize}
+\item RACECAR Web designer: \url{http://racecar.mit.edu}
+\item Boop Light Detector, iOS phone app (4+ reviews, over 2100 downloads)
+\item Green Net - reducing energy consumption at MIT
+\item RoboCon 2016 Web Designer: http://robocon.mit.edu/
+\item Ariel Anders personal webpage: http://people.csail.mit.edu/aanders/
+\item Projects listed at http://people.csail.mit.edu/aanders/projects.html:
+\begin{itemize}
+\item drone line following project
+\item outreach game designed for UCSC Tau Beta PI
+\item mechatronics robot
+\item vibeaware
+\end{itemize}
+\item Open source software: https://github.com/arii
+\end{itemize}
 
 \section*{Miscellaneous}
 
