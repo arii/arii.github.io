@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Robot Juggling</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+  <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <!-- <img src="images/logo.svg" alt=""> -->
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Summary</a>
+                    </li>
+                    <li>
+                        <a href="#materials">Materials</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#contace">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+<div class="container">
+  <a name="about"/></a><h2>Robot Juggling</h2>
+  <!-- <h5> Author Name</h5> -->
+  
+<table class="table">
+    <tbody>
+      <tr>
+        <th>Summary</th>
+        <td>
+            In this assignment students learn how to control a robot to juggle a ball. To achieve this goal, students will program a velocity controlled robot, such that it causes the ball to bounce with some desired periodic motion. Specifically, students will implement a hybrid controller that uses a <em>  mirror control law </em> within the framework of a 2D physics simulator. 
+
+        Similar to many control assignments, the theoretical learning objectives deal with analyzing system responses and stability criterion. Additionally, designing and implementing the controller will give students a chance to translate theoretical knowledge into real-world practice. This assignment differentiates from most introductory control assignments because the dynamics of robot juggling is highly nonlinear, due to the collisions with the robot.  
+        </td>
+      </tr>
+      <tr>
+          <th>Topics</th>
+          <td>robotics, feedback control systems, and nonprehensile manipulation</td>
+      </tr>
+      <tr>
+        <th>Audience</th>
+        <td>
+            This assignment is tailored to undergraduate students, with at least an introduction class in programming.  
+
+            It was created for a sophomore/junior engineering class in Dynamics and Control.  
+        </td>
+    </tr>
+    <tr>
+        <th>Difficulty</th>
+        <td>
+            The difficulty level of the assignment is fairly low.  The purpose is to introduce students to control and develop a working implementation.  All steps are broken down into simple components.  All students are expected to be able to complete the assignment. That being said, the framework does allow for interesting and more challenging future work.  
+        </td>
+      </tr>
+      <tr>
+            <th> Strengths </th>
+            <td> <ul>
+                    <li>Everything we use in the assignment is open source.
+                    <li>The source code and installation process has worked consistently on OS X, Ubuntu, and Windows. 
+                    <li>All implementation throughout the assignment has visualations. 
+                    <li>We introduce hybrid control for nonlinear dynamics in a tutorial-like framework. 
+                </ul>
+            </td>
+        <tr>
+            <th> Weaknesses</th>
+            <td> <ul>
+                    <li> Downloading python packages on anaconda is somewhat slow
+                    <li> No readily available real robot to implement control algorithms
+                    <li> Does not implement alternative approaches 
+                    <li> May be challenging for people without any programming experience. 
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Dependencies </th>
+            <td> <ul>
+                
+                    <li>The assignment is implemented with python, using readily accessible packages from Anaconda Cloud. 
+                     <li>The assignment is free, open source, and capable of running across popular operating systems, like Windows, Mac, and Ubuntu.
+            </td>
+        </tr>
+        <tr>
+            <th>Variants</th>
+            <td> <ul>
+                    The following componenets can be done separately:
+                    <li> Position-derivative control of a velocity-controlled robot.
+                    <li> Analyzing impact dynamics of a ball projectile
+                    Additionally, the framework is conducive to easily adding more objects for simulation if somene wants to build upon it.
+                
+            </td>
+        </tr>
+
+
+    </tbody>
+  </table>
+</div>
+
+
+
+<div class="container">
+  <a name="materials"/></a><h2> Materials </h2>
+  The content for the assignment is completely software based.
+  <table class="table">
+    <tbody>
+
+      <tr>
+          <th>Interactive Assignment</th>
+          <td> There are three jupyter notebooks for students to use for completing the assignment. A web preview of the assignments are shown here:
+              <ul>
+                    <li>
+                        <a href="Introduction+to+Box+2D.html">Part 1: Introduction to Box2D</a>
+                    <li>
+                        <a href="PD+Control.html">Part 2: PD Control </a>
+                    <li>
+                        <a href="Robot+Juggling.html">Part 3: Robot Juggling </a>
+                            
+              </ul>
+
+
+          </td>
+      </tr>
+
+
+      <tr>
+          <th>Source Code Repository</th>
+          <td> <!--All of the code is maintained on <a href="">github</a>, including the install scripts and jupyter notebooks 
+              <br> -->
+
+              You can download a zip of the code <a href="code.zip"/>here</a> <br> <br>
+              
+              This  <a href="code"/>Static Code repository</a> contains:
+              <ul>
+                  <li><a href="code/README.md"><b>README.md</b></a> a readme file explaining how to run the software
+                  <li><a href="code/install.py"><b>install.py</b></a> a python install script to install conda packages
+                  <li><a href="code/tutorial.py"><b>tutorial.py</b></a> helper python file for the notebooks
+                      <li><a href="code/create_planar_world.py"><b>create_planar_world.py</b></a>additional helper file that contians Box2D and pygame code.</li>
+
+                  <li><a href="code/media"><b>media</b></a> a folder containing images and gifs
+                    </ul> 
+                      <br>Additionally, we have the three jupyter notebooks.  (Note, to download you will need to right click and use save as )
+                <ul>
+                  <li><b><a href="code/Introduction%20to%20Box%202D.ipynb">Introduction to Box2D notebook</a></b> </li>
+                <li><b><a href="code/PD%20Control.ipynb">PD Control notebook</a></b></li>
+                <li><b><a href="code/Robot%20Juggling.ipynb">Robot juggling notebook</a></b></a></li>
+
+              </ul>
+
+          </td>
+      </tr>
+    <tr>
+        <th> Recommended Reading </th>
+        <td>
+            All of the code was implemented by reviewing the following conference and journal papers:
+            <ul>
+                <li> Buhler, Martin, Daniel E. Koditschek, and Peter J. Kindlmann. "A family of robot control strategies for intermittent dynamical environments." IEEE Control Systems Magazine 10.2 (1990): 16-22.
+                <li> Schaal, Stefan, and Christopher G. Atkeson. "Open loop stable control strategies for robot juggling." Robotics and Automation, 1993. Proceedings., 1993 IEEE International Conference on. IEEE, 1993.
+                <li> Buehler, Martin, Daniel E. Koditschek, and Peter J. Kindlmann. "Planning and control of robotic juggling and catching tasks." The International Journal of Robotics Research 13.2 (1994): 101-118.
+                <li>  Ronsse, Renaud, Philippe Lefevre, and Rodolphe Sepulchre. "Rhythmic feedback control of a blind planar juggler." IEEE Transactions on Robotics 23.4 (2007): 790-802.
+            </ul>
+        </td>
+
+    </tr>
+
+    
+    <tr>
+          <th>
+          Powerpoint Slides for Guided tutorial
+          </th>
+          <td> The powerpoint slides are created for giving a guided tutorial on implementing a robot juggler.  They also provide the theoretical overview of Position-derivative control and of course,  the robot juggling problem.  
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRlOREolQ7MWtGUmc2gGJVZamjaN7VoygYhiTZ2MJlwcCHvoHQd759nIo0EWDuHPBjspZ72s3HcdDwv/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+        </td>
+
+    </tr>
+
+
+    </tbody>
+  </table>
+</div>
+    </tbody>
+  </table>
+</div>
+
+
+</div>
+
+<!--
+
+<div class="container">
+<h2> Contact</h2><a name="contact"/></a>
+<p> We are excited to offer the materials for our course open source at <a href="">Github</a>
+</div>
+-->
+
+ <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            </div>
+        </div>
+    </div>
+
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
