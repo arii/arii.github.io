@@ -14,6 +14,7 @@ In your command line, change directory to the location of the juggling code fold
 ## Install python packages used for the class
 
 Run `python install.py` to start installation of conda packages.
+If install.py fails, you can try running each package separately in install.sh
 
 
 ## Open a python notebook
