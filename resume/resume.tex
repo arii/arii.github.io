@@ -7,10 +7,13 @@
 \usepackage[resetlabels]{multibib}
 \usepackage{tabularx}
 \usepackage{geometry} % to change the page dimensions
+\usepackage{hyperref}
 \geometry{a4paper}
 \geometry{margin=1in} 
 
-
+\makeatletter
+\def\@biblabel#1{}
+\makeatother
 
 % Turn off page numbering
 \pagestyle{fancy}
@@ -39,8 +42,6 @@
 
 \usepackage[none]{hyphenat}
 
-% Define bibliographies.
-%\newcites{j,c}{Journal Publications,Conference Publications}
 
 %\setlength\parindent{0pt}
 \begin{document}
@@ -85,6 +86,7 @@ Ariel Anders
         \item {\em Completed minor: Mechanical Engineering/Aeronautics and Astronautics\\
                 (courses in controls and autonomous vehicles)}
 	\end{itemize}
+\item Primary research area of planning robust robotic manipulation methods. Completed a variety of projects including: reinforcement learning for bi-manual grasping, multi-robot planning under uncertainty, and reliable robotic assembly methods. Each listed research project has been successfully demonstrated on a real robot (Willow Garage PR2 and TurtleBots).   
 \end{itemize}
 
 \begin{itemize}
@@ -142,6 +144,19 @@ Ariel Anders
 \end{itemize}
 
 
+\bibliographystylea{unsrt}
+\nocitea{andersICRA18}
+\nocitea{anders2018juggle}
+\nocitea{acmp2017}
+\nocitea{mems17}
+\nocitea{isec17}
+\nocitea{ijrr17}
+\nocitea{apl16}
+\nocitea{eaai17}
+\nocitea{rss15}
+\nocitea{swag}
+\nocitea{dental}
+\bibliographya{ari}
 
 \section*{Professional Experience}
 \subparagraph{Lead Technology Developer, LEAC} MIT $\cdot$ Cambridge, MA $\cdot$ January 2017- Present
@@ -156,32 +171,36 @@ Santa Clara, CA $\cdot$ Summer 2014
 \item Responsibilities included designing, writing, testing, and documenting design automation software that uses machine learning techniques to determine proper and efficient simulation points. These simulation points are used during architecture analysis of future Intel Architecture based products and platforms.
 \end{itemize}
 
-
-\section*{Research Experience}
-\subparagraph{Graduate Research Assistant, CSAIL}
-MIT$\cdot$ Cambridge, MA $\cdot$ Summer 2012 - Present
+\subparagraph{Undergraduate Researcher, Bionics Lab}
+UCSC $\cdot$ Santa Cruz, CA $\cdot$ Summer 2010 - 2012
 \begin{itemize}
-	\item Research focus: planning, reinforcement learning and robotic manipulation
-%	\item Used machine learning and Artificial Intelligence techniques to implement whole-limb manipulation for grasping large objects with the PR2 robot.
- \end{itemize}
- \subparagraph{Undergraduate Research, Bionics Lab}
-UCSC $\cdot$ Santa Cruz, CA $\cdot$ Summer 2010 - Spring 2012
-\begin{itemize}
-	\item Advisor: Jacob Rosen 
+    \item Advisor: Jacob Rosen (Now at UCLA)
      	\item Research focus: CAD/CAM applications in dentistry, autonomous control with mechanical systems, and UI development for robotic programs.
      	\item  Developed a workflow to execute dental crowning and implant placement procedures on static dental models that I verified experimentally. Worked on a system to implement dynamic dental procedures. 
 \end{itemize}
 
 
-
 \section*{Teaching Experience}
+
+\subparagraph{ENGR 2340: Dynamics}
+Olin College of Engineering $\cdot$ Fall 2018
+\begin{itemize}
+\item Course Description: With an emphasis on understanding fundamental concepts, students will learn to create and analyze mathematical models for mechanical and electromechanical systems that are changing in time. Equations of motion for 3D rigid bodies and systems will be derived using conservation of momentum and energy methods. Concepts involving equilibrium, linearization, and stability will be applied to study dynamic response in both the time and frequency domains through time-integration, transfer function, and state-space analysis. The idea of feedback control is introduced. Coursework and projects will involve examples such as robots, mechanisms, vehicles, and aircraft/spacecraft.
+\end{itemize}
+
+\subparagraph{Beaverworks Summer Institute Technical Instructor}
+ BeaverWorks $\cdot$ Summer 2017
+\begin{itemize}
+    \item The Autonomous Mini Grand Prix, is a hands-on, intensive, project-based challenge that demonstrates autonomous mini racecar navigation in a complex environment. In project teams students will use their own RACECAR (Rapid Autonomous Complex- Environment Competing Ackermann-steering Robot), complete with sensors and a NVIDIA computer running on ROS (Robot Operating System), to Move! Explore! Learn! Race! As one of the technical instructors, I provide lectures, lead laboratory exercises, and assist in creating curriculum for the course.  
+\end{itemize}
+
 \subparagraph{6.141 Robotics: Science and Systems I Teaching Assistant}
 MIT$\cdot$ Spring 2017
 \begin{itemize}
 \item Course Description: Presents concepts, principles, and algorithms for sensing and computation related to the physical world. Topics include motion planning, geometric reasoning, kinematics and dynamics, state estimation, tracking, map building, manipulation, human-robot interaction, fault diagnosis, and embedded system development. Students specify and design a small-scale yet complex robot capable of real-time interaction with the natural world. 
 \end{itemize}
 \subparagraph{Beaverworks Summer Institute Lead Associate Instructor}
- $\cdot$ Summer 2016
+ BeaverWorks $\cdot$ Summer 2016
 \begin{itemize}
 \item The MIT Beaver Works Summer Institute is a 4-week residential STEM-based program for talented rising high school seniors (entering the 12th grade). This years exciting project is the MIT Mini Grand Prix Challenge, a hands-on, intensive 4-week program that will focus on demonstrating fast, autonomous navigation of small racecars in a complex environment. As lead associate instructor I lead a team of 6 associate instructors during the lab portions of the course.  Additionally, I assisted in creating lab curriculum throughout the course and lead the material creation for the computer vision session of the course. See racecar.mit.edu for more details.
 \end{itemize}
@@ -238,33 +257,6 @@ UCSC $\cdot$ Summer 2009
 \item Summercamp for middle school girls to learn how to program Lego Mindstorm Robots. Prepared course material on programming the robots and an introduction to Processing.
 \end{itemize}
 
-\bibliographystylea{abbrv}
-\nocitea{acmp2017}
-\nocitea{mems17}
-\nocitea{isec17}
-\nocitea{ijrr17}
-\nocitea{apl16}
-\nocitea{eaai17}
-\nocitea{rss15}
-\nocitea{swag}
-\nocitea{dental}
-\bibliographya{ari}
-
-\iffalse
-    \bibliographystylej{IEEEtran}
-    \bibliographystylec{IEEEtran}
-
-    \nocitej{ijrr17}
-    \nocitec{rss15}
-    \nocitec{eaai17}
-    \nocitec{dental}
-    \nocitej{apl16}
-    \nocitec{mems17}
-    \nocitec{isec17}
-
-    \bibliographyj{ari}
-    \bibliographyc{ari}
-\fi
 
 
 \section*{Research Fellowships}
@@ -331,7 +323,8 @@ Award for developing new fume hood technologies, in partnership with LEAC at MIT
 \section*{Service and Leadership Activities}
 \subparagraph{Student Organization Activities}
 \begin{itemize}
-	\item RoboCon 2016 Committee chairperson 
+    \item MIT EECS Robotic RAISINS Coordinator 2016
+	\item RoboCon 2016 Committee Chairperson 
 	\item CSAIL Student Committee, President, AI Representative, Publicity Czar  
 	\item MIT Concert Band,  Vice President and Tour Manager 
 	\item Ashdown House Officer,  Coffee Hour Officer, Events Committee Officer 
@@ -344,12 +337,14 @@ Award for developing new fume hood technologies, in partnership with LEAC at MIT
 	\item UCSC Tau Beta Pi,  Corresponding Secretary, Exec. Board Member  
 \end{itemize}
 \subparagraph{Volunteer Activities}
-\begin{itemize}     
-  \item LIS Robot Tour guide 2012-present
+\begin{itemize}    
+    \item AAAI Student Volunteer 2017 and 2018
+    \item LIS Robot Tour Guide 2012-present
+    \item MIT EECS Student Visit Day Volunteer 2013-present
 	\item UCSC NSBE Math Boot Camp Tutor  2012     
 	\item UCSC Google Student Ambassador  2009-2011  
 	\item Mathematics Engineering and Science Achievement Judge   2009-2011  
-	\item Expanding Your Horizons conference workshop liaison  2009-2010
+	\item Expanding Your Horizons Conference Workshop Liaison  2009-2010
 \end{itemize}
 
 
@@ -360,19 +355,19 @@ Award for developing new fume hood technologies, in partnership with LEAC at MIT
 	\item \textbf{Software} \ Robot Operating System, SolidWorks, Simics, BlueSpec, Wincaps
 	\item \textbf{OSs} \ Unix, Linux,  Mac, Windows
 	\item \textbf{Robot platforms} \ Denso VM-series, PR2, TurtleBot, DuckieBot, 6.141 Racecar
-	\item \textbf{Embedded Systems} Arduino, Raspberry Pi, Jetson TX1, Pandaboard, Microchip PIC 32, Virtex5 FPGA, and  68HC11E1 Microcontroller 
+	\item \textbf{Embedded Systems} Arduino, Raspberry Pi, Jetson TX1 and TK1, Pandaboard, Microchip PIC 32, Virtex5 FPGA, and  68HC11E1 Microcontroller 
 \end{itemize}
 
 
 \section*{Personal Projects Portfolio}
 \begin{itemize}
 \item RACECAR Web designer: \url{http://racecar.mit.edu}
-\item Boop Light Detector, iOS phone app (4+ stars, over 2100 downloads)
+\item Boop Light Detector, iOS phone app (4+ stars, over 6000 downloads)
 \item Green Net - reducing energy consumption at MIT
-\item RoboCon 2016 Web Designer: http://robocon.mit.edu/
-\item Ariel Anders personal webpage: http://people.csail.mit.edu/aanders/
-\item More projects listed at http://people.csail.mit.edu/aanders/projects.html:
-\item Open source software: https://github.com/arii
+\item RoboCon 2016 Web Designer: \url{http://robocon.mit.edu/}
+\item Ariel Anders personal webpage: \url{http://people.csail.mit.edu/aanders/}
+\item More projects listed at \url{http://people.csail.mit.edu/aanders/projects.html}:
+\item Open source software: \url{https://github.com/arii}
 \end{itemize}
 
 \section*{Miscellaneous}
