@@ -32,7 +32,7 @@ layout: default
     </div>
 <div class="col-lg-6">
     <a href ="http://news.mit.edu/2016/stata-center-phone-booths-light-therapy-aims-to-brighten-moods-0729">
-    <h3>Light Therapy at MIT </a>
+    <h3>Light Therapy at MIT 
     </h3>
     </a>
     <p>I placed public artificial lightboxes around locations on MIT's campus for people with Seasonal Affective Disorder (SAD).  Lightboxes  are large and expensive, making it challenging for students to have consistent access to them.  By placing lightboxes in accessible locations on campus, I hoped to ameliorate some of the effects from the north eastern winter. </p>
@@ -47,7 +47,7 @@ layout: default
     </div>
 <div class="col-lg-6">
     <a href="https://beaverworks.ll.mit.edu/CMS/bw/bwsi">
-    <h3>BeaverWorks Summer Institute</a>
+    <h3>BeaverWorks Summer Institute
     </h3>
     </a>
     <p>
@@ -65,7 +65,7 @@ The MIT Beaver Works Summer Institute is a rigorous, world-class STEM program fo
     </div>
 <div class="col-lg-6">
 	<a href ="http://news.mit.edu/2015/csail-delivery-robots-collaborate-0810">
-    <h3>Delivery Bots</a>
+    <h3>Delivery Bots
     </h3>
     </a>
     <p>My research group worked on a multi-robot project for unpredictable environments.  In this <a href="https://youtu.be/Jfzun9pP74U">video</a>, I give an overview of the project.  
@@ -82,7 +82,7 @@ The MIT Beaver Works Summer Institute is a rigorous, world-class STEM program fo
     </div>
 <div class="col-lg-6">
     <a href="http://robocon.mit.edu">
-    <h3>RoboCon 2016 Webdesigner</a>
+    <h3>RoboCon 2016 Webdesigner
     </h3>
     </a>
     <p>RoboCon is a student workshop for robotics across any department or lab at MIT.  I was a committee chairperson and created the website for the inaugural conference.
@@ -96,7 +96,7 @@ The MIT Beaver Works Summer Institute is a rigorous, world-class STEM program fo
     </div>
 <div class="col-lg-6">
     <a href="https://www.youtube.com/watch?v=f5l8GA1PHm8&t=1s">
-    <h3>Drone Line Following Project</a>
+    <h3>Drone Line Following Project
     </h3>
     </a>
     <p>I took 16.31 Feedback and Control Systems, which provided a Rolling Spider Parrot drone for learning the material. For our final project, my group decided to make the drone use its onboard camera to follow a line on the ground. </p><p>
@@ -112,7 +112,7 @@ The MIT Beaver Works Summer Institute is a rigorous, world-class STEM program fo
     </div>
 <div class="col-lg-6">
     <a href ="http://dspace.mit.edu/handle/1721.1/91034">
-    <h3>Learning SWAG</a>
+    <h3>Learning SWAG
     </h3>
     </a>
     <p> My master's thesis is titled, "Learning a Strategy for Whole Arm Grasping".  In this work, I used reinforcement learning for dynamic whole-arm grasps using single and bimanual manipulation. 
@@ -126,7 +126,7 @@ The MIT Beaver Works Summer Institute is a rigorous, world-class STEM program fo
     </div>
 <div class="col-lg-6">
     <a href="http://leac.mit.edu">
-    <h3>Lab Energy Assessment Center</a>
+    <h3>Lab Energy Assessment Center
     </h3>
     </a>
     <p>The Lab Energy Assessment Center (LEAC) is a new organization founded from a grant won from the MIT Green Labs program. The goal of the LEAC is to work in conjunction with Green Labs and MIT Sustainability to promote resourceful energy usage by providing energy assessments free of charge to labs on campus. 
