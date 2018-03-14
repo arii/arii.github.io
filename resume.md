@@ -11,7 +11,7 @@ layout: default
 </div>
 <div class="row">
     <div class="col-lg-6 pageheader" >
-        <h2>Education</h2>
+        <h3>Education</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
         <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#education"></button>
@@ -20,7 +20,7 @@ layout: default
 <section id="education" class="resumesect collapse row">
 
 <div class="col-lg-12">
-<h3>Massachusetts Institute of Technology,  Cambridge, MA </h3>
+<h4>Massachusetts Institute of Technology,  Cambridge, MA </h4>
 <h4> Ph.D., Electrical Engineering and Computer Science, Fall 2014 - present</h4>
 <ul>
 <li> Advisors: Prof. Leslie Kaelbling and Prof. Tomas Lozano Perez.</li>
@@ -58,8 +58,8 @@ layout: default
 </div>
 
 <div class="col-lg-12">
-<h3>
-University of California, Santa Cruz, Santa Cruz, CA </h3>
+<h4>
+University of California, Santa Cruz, Santa Cruz, CA </h4>
 <h4>B. S., Computer Engineering, Fall 2008 - Spring 2012</h4>
 <ul>
 <li> University of California Regent Scholar</li>
@@ -106,7 +106,7 @@ University of California, Santa Cruz, Santa Cruz, CA </h3>
 <!-- Publication BLOCK -->
 <div class="row">
     <div class="col-lg-6 pageheader" >
-        <h2>Publications</h2>
+        <h3>Publications</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
         <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#publication"></button>
@@ -162,7 +162,7 @@ University of California, Santa Cruz, Santa Cruz, CA </h3>
 <!-- Profesional Experience BLOCK -->
 <div class="row">
     <div class="col-lg-6 pageheader" >
-        <h2>Professional Experience</h2>
+        <h3>Professional Experience</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
         <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#professional"></button>
@@ -197,7 +197,7 @@ University of California, Santa Cruz, Santa Cruz, CA </h3>
 <!-- TEACHING EXPERIENCE BLOCK -->
 <div class="row">
     <div class="col-lg-6 pageheader" >
-        <h2>Teaching Experience</h2>
+        <h3>Teaching Experience</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
         <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#teaching"></button>
@@ -281,7 +281,7 @@ University of California, Santa Cruz, Santa Cruz, CA </h3>
 <!-- Fellowships and Awards -->
 <div class="row">
     <div class="col-lg-6 pageheader" >
-        <h2>Fellowships, Grants, and Awards</h2>
+        <h3>Fellowships, Grants, and Awards</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
         <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#fellowship"></button>
@@ -349,7 +349,7 @@ Received $1000 in seed funding to create green lab technology. Award received in
 <!-- Service and Leadership -->
 <div class="row">
     <div class="col-lg-6 pageheader" >
-        <h2>Service and Leadership</h2>
+        <h3>Service and Leadership</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
         <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#service"></button>
@@ -391,7 +391,7 @@ Received $1000 in seed funding to create green lab technology. Award received in
 <!-- Computer Skills -->
 <div class="row">
     <div class="col-lg-6 pageheader" >
-        <h2>Technical Skills</h2>
+        <h3>Technical Skills</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
         <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#computer"></button>
@@ -416,7 +416,7 @@ Received $1000 in seed funding to create green lab technology. Award received in
 
 <!-- Misc -->
 
-<h2 id="miscellaneous" class="unnumbered unnumbered">Miscellaneous</h2>
+<h3 id="miscellaneous" class="unnumbered unnumbered">Miscellaneous</h3>
 <ul>
 <li><p>Born in California, USA. United States citizen.</p></li>
 </ul>
