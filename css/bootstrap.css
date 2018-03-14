@@ -6784,8 +6784,8 @@ li
 
 body>.container{
     max-width:800px;
-    margin-left: 3%;
-    margin-right: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .mainpic{
