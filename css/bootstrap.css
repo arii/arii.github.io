@@ -6817,7 +6817,7 @@ body>.container{
 }
 
 .row.buffer {
-    display:flex;
+    display:table;
     align-items:center
 }
 
