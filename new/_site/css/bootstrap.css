@@ -6759,11 +6759,12 @@ button.close {
 
 
 .footer {
-    position:absolute;
     bottom: 0 ;
     width: 100%;
     min-height: 60px;
-    margin-bottom:50px;
+    padding-bottom:0px;
+    padding-top:10px;
+    margin-bottom:0px
 }
 
 li 
@@ -6777,3 +6778,11 @@ li
   /*transform: translateY(50%);*/
 }
 
+body>.container{
+    max-width:800px;
+    ]
+
+.mainpic{
+display: flex;
+align-items:center;
+}
