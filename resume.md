@@ -206,7 +206,7 @@ University of California, Santa Cruz, Santa Cruz, CA </h3>
 <section id="teaching" class="resumesect collapse row">
 
 
-<h4 id="engr-2340-dynamics">ENGR 2340: Dynamics</h4>
+<h4 id="engr-2340-dynamics">ENGR 2340: Dynamics Lecturer</h4>
 <p>Olin College of Engineering <span class="math inline">⋅</span> Fall 2018</p>
 <ul>
 <li><p>Course Description: With an emphasis on understanding fundamental concepts, students will learn to create and analyze mathematical models for mechanical and electromechanical systems that are changing in time. Equations of motion for 3D rigid bodies and systems will be derived using conservation of momentum and energy methods. Concepts involving equilibrium, linearization, and stability will be applied to study dynamic response in both the time and frequency domains through time-integration, transfer function, and state-space analysis. The idea of feedback control is introduced. Coursework and projects will involve examples such as robots, mechanisms, vehicles, and aircraft/spacecraft.</p></li>
