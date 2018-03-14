@@ -1,4 +1,6 @@
 ## Core latex/pdflatex auxiliary files:
+*.swo
+*.swp
 *.aux
 *.lof
 *.log
@@ -11,6 +13,7 @@
 *.cb
 *.cb2
 .*.lb
+_site/*
 
 ## Intermediate documents:
 *.dvi
