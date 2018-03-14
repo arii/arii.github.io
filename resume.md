@@ -97,7 +97,7 @@ University of California, Santa Cruz, Santa Cruz, CA </h4>
 </div>
 
 <div class="col-lg-12 pageheader buffer text-right" >
-        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#education"></button>
+        <button class="btn glyphicon glyphicon-menu-up none  pull-right" data-toggle="collapse" data-target="#education"></button>
 </div>
 
 </section>
@@ -150,7 +150,7 @@ University of California, Santa Cruz, Santa Cruz, CA </h4>
 </div>
 
 <div class="col-lg-12 pageheader buffer text-right" >
-        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#publication"></button>
+        <button class="btn glyphicon glyphicon-menu-up none  pull-right" data-toggle="collapse" data-target="#publication"></button>
 </div>
 
 
@@ -190,7 +190,7 @@ University of California, Santa Cruz, Santa Cruz, CA </h4>
 <li><p>Developed a workflow to execute dental crowning and implant placement procedures on static dental models that I verified experimentally. Worked on a system to implement dynamic dental procedures.</p></li>
 </ul>
 <div class="col-lg-12 pageheader buffer text-right" >
-        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#professional"></button>
+        <button class="btn glyphicon glyphicon-menu-up none  pull-right" data-toggle="collapse" data-target="#professional"></button>
 </div>
 </section>
 
@@ -273,7 +273,7 @@ University of California, Santa Cruz, Santa Cruz, CA </h4>
 <li><p>Summercamp for middle school girls to learn how to program Lego Mindstorm Robots. Prepared course material on programming the robots and an introduction to Processing.</p></li>
 </ul>
 <div class="col-lg-12 pageheader buffer text-right" >
-        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#teaching"></button>
+        <button class="btn glyphicon glyphicon-menu-up none  pull-right" data-toggle="collapse" data-target="#teaching"></button>
 </div>
 
 </section>
@@ -342,7 +342,7 @@ Received $1000 in seed funding to create green lab technology. Award received in
 <li><p><span><em>Beer Bots,</em></span> 2nd place at CSAIL Research Highlights, Spring 2015</p></li>
 </ul>
 <div class="col-lg-12 pageheader buffer text-right" >
-        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#fellowship"></button>
+        <button class="btn glyphicon glyphicon-menu-up none  pull-right" data-toggle="collapse" data-target="#fellowship"></button>
 </div>
 
 </section>
@@ -383,7 +383,7 @@ Received $1000 in seed funding to create green lab technology. Award received in
 <li><p>Expanding Your Horizons Conference Workshop Liaison 2009-2010</p></li>
 </ul>
 <div class="col-lg-12 pageheader buffer text-right" >
-        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#service"></button>
+        <button class="btn glyphicon glyphicon-menu-up none  pull-right" data-toggle="collapse" data-target="#service"></button>
 </div>
 
 </section>
@@ -408,16 +408,22 @@ Received $1000 in seed funding to create green lab technology. Award received in
 </ul>
 
 <div class="col-lg-12 pageheader buffer text-right" >
-        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#computer"></button>
+        <button class="btn glyphicon glyphicon-menu-up none  pull-right" data-toggle="collapse" data-target="#computer"></button>
 </div>
 
 </section>
 
 
 <!-- Misc -->
+<div class="row">
+    <div class="col-lg-12 pageheader" >
+        <h3>Miscellaneous</h3>
 
-<h3 id="miscellaneous" class="unnumbered unnumbered">Miscellaneous</h3>
 <ul>
 <li><p>Born in California, USA. United States citizen.</p></li>
 </ul>
+
+</div>
+</div>
+
 

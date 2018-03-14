@@ -2,7 +2,7 @@
 title: Projects
 layout: default
 ---
-<div class="row">
+<div class="row buffer">
     <div class="col-lg-12 text-center ">
         <h1> Projects</h1>
     <p class="text-justify">As a graduate and undergraduate student studying engineering, I participated in many hands-on projects. Some of these were created from coursework and research. Other projects are motivated by my interested in mental wellness and sustainablity.

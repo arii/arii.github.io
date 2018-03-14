@@ -6759,12 +6759,16 @@ button.close {
 
 
 .footer {
+    position:fixed;
     bottom: 0 ;
     width: 100%;
     min-height: 60px;
-    padding-bottom:0px;
+    max-height:340px;
+    padding-bottom:20px;
     padding-top:10px;
-    margin-bottom:0px
+    margin-bottom:0px;
+    display:table;
+    align-items:bottom;
 }
 
 li 
@@ -6788,11 +6792,14 @@ body>.container{
     max-width:1000px;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top:60px;
+    padding-bottom:100px;
 }
 .row{
 
     padding-left: 1em;
     padding-right: 1em;
+    padding-top: 1em;
 }
 
 .mainpic{
@@ -6838,3 +6845,7 @@ body>.container{
     padding-right:1em;
 }
 
+
+.none {
+    display:none;
+}
