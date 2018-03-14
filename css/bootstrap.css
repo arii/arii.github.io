@@ -6784,6 +6784,8 @@ li
 
 body>.container{
     max-width:800px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .mainpic{
@@ -6818,6 +6820,8 @@ body>.container{
 
 .row.buffer {
     display:table;
-    align-items:center
+    align-items:center;
+    margin-left:1%;
+    margin-right:1%;
 }
 
