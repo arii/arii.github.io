@@ -6,7 +6,7 @@ layout: default
 <div class="row">
     <div class="col-lg-12 text-center ">
         <h1> Resume </h1>
-    <p class="text-justify"><a href="resume.pdf">This is a pdf version of my Resume.</a>  The rest of this page presents the same material in HTML format. This resume is up to date as of March 2018. Please take note of the date this resume was updated and send me an email if you're interested in a more recent version. </p>
+    <p class="text-justify">This is a pdf version of my <a href="resume.pdf">resume</a> and <a href="cv.pdf">cv</a>. The rest of this page presents the same material in HTML format. This resume is up to date as of March 2018. Please take note of the date this resume was updated and send me an email if you're interested in a more recent version. </p>
     </div>
 </div>
 <div class="row">
