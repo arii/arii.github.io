@@ -21,10 +21,9 @@ layout: default
 
 <div class="col-lg-12">
 <h4>Massachusetts Institute of Technology,  Cambridge, MA </h4>
-<h4> Ph.D., Electrical Engineering and Computer Science, Fall 2014 - present</h4>
+<h4> Ph.D., Electrical Engineering and Computer Science, Fall 2014 - Winter 2019</h4>
 <ul>
 <li> Advisors: Prof. Leslie Kaelbling and Prof. Tomas Lozano Perez.</li>
-<li> Passed the Technical and Research Qualifying Examinations.</li>
 <li> Completed minor: Mechanical Engineering/Aeronautics and Astronautics </li>
 <li> Primary research area of planning robust robotic manipulation methods. Completed a variety of projects including: reinforcement learning for bi-manual grasping, multi-robot planning under uncertainty, and reliable robotic assembly methods. Each listed research project has been successfully demonstrated on a real robot (Willow Garage PR2 and TurtleBots).
 </li>
