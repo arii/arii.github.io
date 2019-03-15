@@ -8,7 +8,7 @@ layout: default
 <div class="col-lg-12 text-center"> 
 <h2> Reliably arranging objects: a conformant planning approach to robot manipulation </h2>
 <p class="text-justify">
-    This page is dedicated to my PhD Thesis.  I studied arranging objects into desired arrangements uisng a robot.  Specifically, I considered the problem when there was substantial uncertainty in the problem due to innaccurate sensing and control, and imperfect knowledge of the world (eg.: friction, mass, properties of objects). In spite of these challenges, I was able to program a robot to robustly assemble some arrangements by using uncertainty reducing actions, such as pushing, and successfully characterising the noise of different actions.  Using a conformant planner, I was able to sequence together different primitive actions that resulted in robust execution of desired arrangement in simulation and on a real robot. 
+This page is dedicated to my PhD Thesis. I studied arranging objects into desired arrangements using a robot. Specifically, I considered the problem when there was substantial uncertainty in the problem due to inaccurate sensing and control, and imperfect knowledge of the world (eg.: friction, mass, properties of objects). In spite of these challenges, I was able to program a robot to robustly assemble some arrangements by using uncertainty-reducing actions, such as pushing, and successfully characterizing the noise of different actions. Using a conformant planner, I was able to sequence together different primitive actions that resulted in robust execution of desired arrangement in simulation and on a real robot.
 </p>
 </div>
 </div>
