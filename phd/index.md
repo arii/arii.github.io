@@ -33,7 +33,8 @@ This thesis provides insight and develops approaches toward scalable methods for
 </div>
 <div class="col-lg-10">
 <p>
-Link to thesis coming soon!
+See the draft of my thesis <a href="/phd/thesis.pdf">here</a>.  
+Link to thesis available on MIT DSPace coming soon!
 </p>
 </div>
 </div>
