@@ -14,10 +14,10 @@ layout: default
         <h3>Education</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
-        <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#education"></button>
+        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#education" aria-expanded="true"></button>
     </div>
 </div>
-<section id="education" class="resumesect collapse row">
+<section id="education" class="resumesect collapse in row">
 
 <div class="col-lg-12">
 <h4>Massachusetts Institute of Technology,  Cambridge, MA </h4>
@@ -108,12 +108,12 @@ University of California, Santa Cruz, Santa Cruz, CA </h4>
         <h3>Publications</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
-        <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#publication"></button>
+        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#publication"></button>
     </div>
 </div>
 
 
-<section id="publication" class="resumesect collapse row">
+<section id="publication" class="resumesect collapse in row">
 <div class="col-lg-12">
 <div id="refs" class="references">
 <div id="ref-rss15">
@@ -164,11 +164,11 @@ University of California, Santa Cruz, Santa Cruz, CA </h4>
         <h3>Professional Experience</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
-        <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#professional"></button>
+        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#professional"></button>
     </div>
 </div>
 
-<section id="professional" class="resumesect collapse row">
+<section id="professional" class="resumesect collapse in row">
 
 <h4 id="lead-technology-developer-leac">Lead Technology Developer, LEAC</h4>
 <p>MIT <span class="math inline">⋅</span> Cambridge, MA <span class="math inline">⋅</span> January 2017- Present</p>
@@ -199,10 +199,10 @@ University of California, Santa Cruz, Santa Cruz, CA </h4>
         <h3>Teaching Experience</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
-        <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#teaching"></button>
+        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#teaching"></button>
     </div>
 </div>
-<section id="teaching" class="resumesect collapse row">
+<section id="teaching" class="resumesect collapse in row">
 
 
 <h4 id="engr-2340-dynamics">ENGR 2340: Dynamics Lecturer</h4>
@@ -283,10 +283,10 @@ University of California, Santa Cruz, Santa Cruz, CA </h4>
         <h3>Fellowships, Grants, and Awards</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
-        <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#fellowship"></button>
+        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#fellowship"></button>
     </div>
 </div>
-<section id="fellowship" class="resumesect collapse row">
+<section id="fellowship" class="resumesect collapse in row">
 
 
 
@@ -351,10 +351,10 @@ Received $1000 in seed funding to create green lab technology. Award received in
         <h3>Service and Leadership</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
-        <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#service"></button>
+        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#service"></button>
     </div>
 </div>
-<section id="service" class="resumesect collapse row">
+<section id="service" class="resumesect collapse in row">
 
 <h4 id="student-organization-activities">Student Organization Activities</h4>
 <ul>
@@ -393,10 +393,10 @@ Received $1000 in seed funding to create green lab technology. Award received in
         <h3>Technical Skills</h3>
     </div>
     <div class="col-lg-6 pageheader text-right" >
-        <button class="btn glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" data-target="#computer"></button>
+        <button class="btn glyphicon glyphicon-menu-up pull-right" data-toggle="collapse" data-target="#computer"></button>
     </div>
 </div>
-<section id="computer" class="resumesect collapse row">
+<section id="computer" class="resumesect collapse in row">
 
 <ul>
 <li><p><strong>Languages</strong>  Python, C, C++, Java, Matlab, Perl, HTML, shell script, Javascript</p></li>
