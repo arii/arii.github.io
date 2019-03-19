@@ -6,7 +6,7 @@ layout: default
 
 <div class="row">
 <div class="col-lg-12 text-center ">
-<h1>Pics n Vids</h1>
+<h1>PhD Videos</h1>
 <p class="text-justify"> Here are some pictures and videos from my PhD thesis.
 </p>
 </div>
