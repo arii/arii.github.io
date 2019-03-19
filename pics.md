@@ -1,5 +1,5 @@
 ---
-title: Pics n Vids
+title: PhD Videos
 layout: default
 ---
 
