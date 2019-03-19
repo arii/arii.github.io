@@ -34,7 +34,7 @@ This thesis provides insight and develops approaches toward scalable methods for
 <div class="col-lg-10">
 <p>
 See the draft of my thesis <a href="/phd/thesis.pdf">here</a>.  
-Link to thesis available on MIT DSPace coming soon!
+The MIT DSpace link for my thesis will be available soon.
 </p>
 </div>
 </div>
@@ -44,7 +44,9 @@ Link to thesis available on MIT DSPace coming soon!
 <h3>Slides</h3>
 </div>
 <div class="col-lg-10">
-<iframe src="https://mitprod-my.sharepoint.com/personal/aanders_mit_edu/_layouts/15/Doc.aspx?sourcedoc={3928306b-b08c-4425-9c11-f4a850da59ff}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+<div class="embed-responsive embed-responsive-16by9">
+
+<iframe class="embed-responsive-item" src="https://mitprod-my.sharepoint.com/personal/aanders_mit_edu/_layouts/15/Doc.aspx?sourcedoc={3928306b-b08c-4425-9c11-f4a850da59ff}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
 </div>
 </div>
 
