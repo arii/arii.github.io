@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arii.github.io/tech-dancer/sitemap.xml
