@@ -14,6 +14,9 @@ author: Ariel Anders
 status: published
 ---
 
+![BeaverWorks RACECAR](/img/bw.jpg)
+*Students programming small robotic cars at the MIT Beaver Works Summer Institute RACECAR course.*
+
 The MIT Beaver Works Summer Institute is a rigorous, world-class STEM program for talented rising high school seniors. I participated as a RACECAR instructor in 2016 and 2017 as a lead associate instructor and technical instructor, respectively. In the RACECAR course, students programmed small robotic cars to autonomously navigate a racetrack.
 
 Some lectures I gave for the course which are available on youtube:

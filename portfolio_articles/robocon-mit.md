@@ -13,6 +13,9 @@ author: Ariel Anders
 status: published
 ---
 
+![RoboCon MIT 2016](/img/robocon.jpg)
+*RoboCon 2016, a student workshop for robotics at MIT.*
+
 RoboCon is a student workshop for robotics across any department or lab at MIT. I was a committee chairperson and created the website for the inaugural conference.
 
 [RoboCon Website](http://robocon.mit.edu)

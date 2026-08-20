@@ -13,6 +13,9 @@ author: Ariel Anders
 status: published
 ---
 
+![Drone Line Following](/img/drone.jpg)
+*Parrot Rolling Spider drone used for the line-following project.*
+
 I took 16.31 Feedback and Control Systems, which provided a Rolling Spider Parrot drone for learning the material. For our final project, my group decided to make the drone use its onboard camera to follow a line on the ground.
 
 The code for our project is available online at [github](https://github.com/arii/FollowTheYellowBrickRoad).
