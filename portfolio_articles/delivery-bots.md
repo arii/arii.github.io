@@ -18,6 +18,9 @@ status: published
 
 My research group worked on a multi-robot project for unpredictable environments. In this [video](https://youtu.be/Jfzun9pP74U), I give an overview of the project.
 
-We presented this work at the Robotics Science and Systems (RSS) conference in 2015. An abstract and our paper is available [here](http://www.roboticsproceedings.org/rss11/p07.html). This paper was a best paper finalist at the conference and extended, by invitation, for the International Journal of Robotics Research.
+**Awards and Publications:**
+We presented this work at the Robotics Science and Systems (RSS) conference in 2015. This paper was nominated as a **Best Paper Finalist** at the conference and was later extended, by invitation, for the International Journal of Robotics Research (IJRR). Additionally, the project won **2nd place at the CSAIL Research Highlights** competition in Spring 2015.
+
+An abstract and our paper is available [here](http://www.roboticsproceedings.org/rss11/p07.html).
 
 [Read the MIT News Article](http://news.mit.edu/2015/csail-delivery-robots-collaborate-0810)

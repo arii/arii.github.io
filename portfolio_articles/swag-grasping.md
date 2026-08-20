@@ -19,6 +19,6 @@ status: published
 ![Learning SWAG Robot Grasping](/img/swag.jpg)
 *Robot utilizing a strategy for whole-arm grasping.*
 
-My master's thesis is titled, "Learning a Strategy for Whole Arm Grasping". In this work, I used reinforcement learning for dynamic whole-arm grasps using single and bimanual manipulation.
+My master's thesis, completed at MIT in Electrical Engineering and Computer Science (EECS), is titled *"Learning a Strategy for Whole Arm Grasping"*. In this work, I used reinforcement learning for dynamic whole-arm grasps using single and bimanual manipulation of bulky, irregular objects under real-world clutter.
 
 [Read the Thesis on DSpace](http://dspace.mit.edu/handle/1721.1/91034)

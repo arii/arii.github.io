@@ -18,6 +18,6 @@ status: published
 
 I placed public artificial lightboxes around locations on MIT's campus for people with Seasonal Affective Disorder (SAD). Lightboxes are large and expensive, making it challenging for students to have consistent access to them. By placing lightboxes in accessible locations on campus, I hoped to ameliorate some of the effects from the north eastern winter.
 
-This project is funded by the [MindHandHeart Innovation Fund](http://mindhandheart.mit.edu/).
+This project was developed under the grant *"Removing SAD from Winter: Planning for public artificial lightbox locations on campus for people with Seasonal Affective Disorder"*, which was funded by the [MindHandHeart Innovation Fund](http://mindhandheart.mit.edu/) in Fall 2015.
 
 [Read the MIT News Article](http://news.mit.edu/2016/stata-center-phone-booths-light-therapy-aims-to-brighten-moods-0729)

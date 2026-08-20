@@ -16,6 +16,6 @@ status: published
 ![RoboCon MIT 2016](/img/robocon.jpg)
 *RoboCon 2016, a student workshop for robotics at MIT.*
 
-RoboCon is a student workshop for robotics across any department or lab at MIT. I was a committee chairperson and created the website for the inaugural conference.
+RoboCon is a student workshop for robotics across any department or lab at MIT. As a **Committee Chairperson**, I helped organize the inaugural conference and was the lead Web Designer responsible for creating the event's website and web platform.
 
 [RoboCon Website](http://robocon.mit.edu)
