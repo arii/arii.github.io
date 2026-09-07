@@ -159,6 +159,38 @@
     <link rel="stylesheet" crossorigin href="/assets/index-Do-st99S.css">
   </head>
   <body>
-    <div id="root"><main style="max-width:1100px;margin:0 auto;padding:2rem 1rem;"><h1>Lab Energy Assessment Center (LEAC) Monitoring Software</h1><p>Network monitoring software and energy audit infrastructure for fume hood efficiency (MIT Green Labs Innovation Award).</p></main></div>
+    <div id="root"><main style="max-width:1100px;margin:0 auto;padding:2rem 1rem;"><header><h1>Lab Energy Assessment Center (LEAC) Monitoring Software</h1><p><strong>Author:</strong> Ariel Anders, PhD | <strong>Date:</strong> 2017-05-15 | <strong>Category:</strong> Sustainability &amp; Energy</p><p><em>Network monitoring software and energy audit infrastructure for fume hood efficiency (MIT Green Labs Innovation Award).</em></p></header><hr /><article><h1>LEAC Fume Hood Energy Monitoring Software</h1>
+<h2>Laboratory Sustainability & Telemetry Infrastructure</h2>
+<p>The <strong>Lab Energy Assessment Center (LEAC)</strong> project (<a href="https://leac-mit.github.io/">leac-mit.github.io</a>) engineered networked telemetry infrastructure and assessment methodologies to track and optimize energy consumption across academic research laboratories at MIT. Serving as the Lead Technology Developer, I designed the project's website, wrote the initial core telemetry prototypes (<code>green_net</code>), and mentored undergraduate researchers who conducted comprehensive energy assessments across campus labs.</p>
+<hr />
+<h2>The Challenge: Laboratory Energy Intensity</h2>
+<p>MIT buildings containing research laboratories consume over 300% more energy per square foot than non-lab academic facilities. Variable Air Volume (VAV) fume hoods, high-powered equipment, and constant lighting draw massive electrical and HVAC loads. For example, a single open fume hood sash can draw as much conditioned air as multiple average American homes, costing thousands of dollars per year in wasted energy.</p>
+<p>Without low-cost, automated telemetry, laboratory managers and sustainability teams lacked granular visibility into equipment power draw, unutilized open sash positions, and campus-wide energy waste.</p>
+<hr />
+<h2>System Architecture & Software Implementation</h2>
+<p><figure><img src="/assets/research/leac.jpg" alt="LEAC Fume Hood Network Monitoring Interface" /><figcaption>LEAC Fume Hood Network Monitoring Interface</figcaption></figure></p>
+<p>To address these challenges, I built and deployed a multi-faceted monitoring platform tailored for academic research environments:</p>
+<h3>1. Smart Outlet Network Monitoring (<code>green_net</code>)</h3>
+<ul>
+<li>Developed Python-based telemetry scripts utilizing the Ouimeaux API to interface with smart plugs (such as WeMo Insight switches), scanning local networks, querying real-time power draw, and outputting structured time-series logs (<code>data.csv</code>).</li>
+<li>Designed the initial data logging architecture and command-line execution flows to capture high-frequency power measurements.</li>
+</ul>
+<h3>2. Computer Vision State Detection</h3>
+<ul>
+<li>For hardwired laboratory equipment such as fume hoods and overhead lighting where inline smart plugs cannot be inserted, we incorporated lightweight computer vision pipelines to identify on/off states and sash positions.</li>
+</ul>
+<hr />
+<h2>Student Mentorship & Program Execution</h2>
+<p>Following initial prototype development, I worked closely with the team—including co-founders, EHS liaisons, and talented undergraduate researchers—to support campus-wide audits:</p>
+<ul>
+<li><strong>Mentorship:</strong> Guided undergraduate team members (such as Dheekshita Kumar, Juan Ferrua, and Maxwell Drake) in configuring hardware, managing data logging repositories, and analyzing lab power draw.</li>
+<li><strong>Collaborative Research:</strong> This work contributed to broader campus sustainability frameworks and publications, including collaborative findings detailed in <em>Energy Reports</em> (Becerra et al., 2018).</li>
+</ul>
+<hr />
+<h2>Grant Recognition & Impact</h2>
+<ul>
+<li><strong>MIT Green Labs Innovation Award:</strong> Recognized with the 2017 Innovation Award ($5,000) for developing sustainable campus technology.</li>
+<li><strong>Actionable Telemetry:</strong> Provided free, minimally invasive energy audits and data-driven recommendations to campus research groups, establishing a scalable model for lab decarbonization.</li>
+</ul></article></main></div>
   </body>
 </html>
