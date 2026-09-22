@@ -9,13 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title data-rh="true">Automating PR Reviews with Gemini & GitHub Actions | Ariel Anders, PhD</title>
     <meta data-rh="true" name="description" content="A comprehensive deep dive into the Boomtick DevAI ecosystem—featuring a dual-layer architecture with boomtick-mcp for agentic tool calls, td-cli for deterministic fallbacks, and Gemini-powered PR review pipelines." />
-    <link data-rh="true" rel="canonical" href="https://arii.github.io/devai/gitops-pr-reviewer" />
+    <link data-rh="true" rel="canonical" href="https://arii.github.io/devai/gitops-pr-reviewer/" />
     <!-- Open Graph / Facebook -->
     <meta data-rh="true" property="og:site_name" content="Ariel Anders Portfolio" />
     <meta data-rh="true" property="og:title" content="Automating PR Reviews with Gemini & GitHub Actions | Ariel Anders, PhD" />
     <meta data-rh="true" property="og:description" content="A comprehensive deep dive into the Boomtick DevAI ecosystem—featuring a dual-layer architecture with boomtick-mcp for agentic tool calls, td-cli for deterministic fallbacks, and Gemini-powered PR review pipelines." />
     <meta data-rh="true" property="og:type" content="website" />
-    <meta data-rh="true" property="og:url" content="https://arii.github.io/devai/gitops-pr-reviewer" />
+    <meta data-rh="true" property="og:url" content="https://arii.github.io/devai/gitops-pr-reviewer/" />
     <meta data-rh="true" property="og:image" content="https://arii.github.io/assets/research/boomtick-devai-tools/boomtick-arch.png" />
     <!-- Twitter Card -->
     <meta data-rh="true" name="twitter:card" content="summary_large_image" />
@@ -61,10 +61,10 @@
   "@graph": [
     {
       "@type": "TechArticle",
-      "@id": "https://arii.github.io/devai/gitops-pr-reviewer#article",
+      "@id": "https://arii.github.io/devai/gitops-pr-reviewer/#article",
       "headline": "Automating PR Reviews with Gemini & GitHub Actions",
       "description": "A comprehensive deep dive into the Boomtick DevAI ecosystem—featuring a dual-layer architecture with boomtick-mcp for agentic tool calls, td-cli for deterministic fallbacks, and Gemini-powered PR review pipelines.",
-      "url": "https://arii.github.io/devai/gitops-pr-reviewer",
+      "url": "https://arii.github.io/devai/gitops-pr-reviewer/",
       "image": {
         "@type": "ImageObject",
         "@id": "https://arii.github.io/assets/research/boomtick-devai-tools/boomtick-arch.png#image",
@@ -74,7 +74,7 @@
         "height": 630,
         "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
       },
-      "mainEntityOfPage": "https://arii.github.io/devai/gitops-pr-reviewer",
+      "mainEntityOfPage": "https://arii.github.io/devai/gitops-pr-reviewer/",
       "proficiencyLevel": "Expert",
       "articleSection": "DevAI",
       "datePublished": "2026-05-10",
@@ -111,7 +111,7 @@
           "@type": "ListItem",
           "position": 3,
           "name": "Automating PR Reviews with Gemini & GitHub Actions",
-          "item": "https://arii.github.io/devai/gitops-pr-reviewer"
+          "item": "https://arii.github.io/devai/gitops-pr-reviewer/"
         }
       ]
     },
@@ -150,13 +150,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+    <link rel="preload" as="image" href="/assets/roboticist.webp" type="image/webp" />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </noscript>
-    <script type="module" crossorigin src="/assets/index-DFuO8fB0.js"></script>
+    <script type="module" crossorigin src="/assets/index-CVsIWz3A.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-BD-e1e1Q.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-Do-st99S.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-Bo77nVrp.css">
   </head>
   <body>
     <div id="root"><main style="max-width:1100px;margin:0 auto;padding:2rem 1rem;"><header><h1>Automating PR Reviews with Gemini &amp; GitHub Actions</h1><p><strong>Author:</strong> Ariel Anders, PhD | <strong>Date:</strong> 2026-05-10 | <strong>Category:</strong> DevAI</p><p><strong>Tags:</strong> DevOps, AI, Gemini, GitHub Actions, MCP, CLI, Boomtick</p><p><em>A comprehensive deep dive into the Boomtick DevAI ecosystem—featuring a dual-layer architecture with boomtick-mcp for agentic tool calls, td-cli for deterministic fallbacks, and Gemini-powered PR review pipelines.</em></p></header><hr /><article><p>The first version of my AI review workflow made a classic mistake: I asked the model to do everything. It had to understand the repo, inspect the diff, infer the design system, read CI logs, and decide what mattered. Sometimes it worked; often it produced a confident wall of feedback that was hard to trust.</p>
@@ -360,6 +361,6 @@ print(result[&quot;candidates&quot;][0][&quot;content&quot;][&quot;parts&quot;][
 <li>Google Gemini generates structured JSON findings over complete context packets.</li>
 <li>Deterministic gatekeeper scripts apply GitHub review states without hallucination risks.</li>
 </ol>
-<p>All pipeline code, path resolution scripts (<code>scripts/resolve-cli.sh</code>), and GitHub Actions workflow triggers are publicly accessible in <a href="https://github.com/arii/boomtick">arii/boomtick</a> and <a href="https://github.com/arii/tech-dancer">arii/tech-dancer</a>. For technical advisory or custom agentic CI integration, learn more about my <a href="https://arii.github.io/about">consulting on multi-agent architectures</a> and developer tooling.</p></article></main></div>
+<p>All pipeline code, path resolution scripts (<code>scripts/resolve-cli.sh</code>), and GitHub Actions workflow triggers are publicly accessible in <a href="https://github.com/arii/boomtick">arii/boomtick</a> and <a href="https://github.com/arii/tech-dancer">arii/tech-dancer</a>. For technical advisory or custom agentic CI integration, learn more about my <a href="https://arii.github.io/about/">consulting on multi-agent architectures</a> and developer tooling.</p></article></main></div>
   </body>
 </html>
