@@ -14,7 +14,7 @@
     <meta data-rh="true" property="og:site_name" content="Ariel Anders Portfolio" />
     <meta data-rh="true" property="og:title" content="Visual Impact / UX Audit | Ariel Anders, PhD" />
     <meta data-rh="true" property="og:description" content="How I built a semantic visual impact analysis pipeline using dependency-cruiser, Playwright screenshot diffing, and automated severity scoring." />
-    <meta data-rh="true" property="og:type" content="website" />
+    <meta data-rh="true" property="og:type" content="article" />
     <meta data-rh="true" property="og:url" content="https://arii.github.io/devai/deployment-impact-analyzer/" />
     <meta data-rh="true" property="og:image" content="https://arii.github.io/assets/studies/deployment-impact-analyzer/before.svg" />
     <!-- Twitter Card -->
@@ -118,7 +118,7 @@
     {
       "@type": "Person",
       "@id": "https://arii.github.io/about#person",
-      "url": "https://arii.github.io/about",
+      "url": "https://arii.github.io/about/",
       "name": "Ariel Anders, PhD",
       "jobTitle": "Robotics & AI Consulting Engineer",
       "email": "anders.ariel@gmail.com",
@@ -155,9 +155,9 @@
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </noscript>
-    <script type="module" crossorigin src="/assets/index-DP5Nm8y4.js"></script>
+    <script type="module" crossorigin src="/assets/index-3A29JUAd.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-BD-e1e1Q.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-Bo77nVrp.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-DliGEDQ7.css">
   </head>
   <body>
     <div id="root"><main style="max-width:1100px;margin:0 auto;padding:2rem 1rem;"><header><h1>Visual Impact / UX Audit</h1><p><strong>Author:</strong> Ariel Anders, PhD | <strong>Date:</strong> 2026-06-19 | <strong>Category:</strong> DevAI</p><p><strong>Tags:</strong> Playwright, CI/CD, UX Audit, Dependency Graph, Automation</p><p><em>How I built a semantic visual impact analysis pipeline using dependency-cruiser, Playwright screenshot diffing, and automated severity scoring.</em></p></header><hr /><article><p>LLM code generation introduces unintended visual side effects—hallucinated UI components, modified badge styles, shifted accents, or unintended layout changes. Reviewing these multi-file diffs manually is error-prone, running full end-to-end test suites on every commit is too slow, and standard unit tests completely miss visual artifacts.</p>
@@ -248,7 +248,7 @@ jobs:
 <blockquote><p><strong>Implemented:</strong> I use the <code>cropped</code> diff artifacts to show exactly where the pixels changed, saving reviewers from playing "spot the difference" on full-page screenshots.</p></blockquote>
 <p>| Before | After | Diff |</p>
 <p>| :---: | :---: | :---: |</p>
-<p>| <figure><img src="/assets/studies/deployment-impact-analyzer/before.svg" alt="Baseline" /><figcaption>Baseline</figcaption></figure> | <figure><img src="/assets/studies/deployment-impact-analyzer/after.svg" alt="Current" /><figcaption>Current</figcaption></figure> | <figure><img src="/assets/studies/deployment-impact-analyzer/diff.svg" alt="Visual Delta" /><figcaption>Visual Delta</figcaption></figure> |</p>
+<p>| <figure><img src="/assets/studies/deployment-impact-analyzer/before.svg" alt="Baseline" loading="lazy" decoding="async" /><figcaption>Baseline</figcaption></figure> | <figure><img src="/assets/studies/deployment-impact-analyzer/after.svg" alt="Current" loading="lazy" decoding="async" /><figcaption>Current</figcaption></figure> | <figure><img src="/assets/studies/deployment-impact-analyzer/diff.svg" alt="Visual Delta" loading="lazy" decoding="async" /><figcaption>Visual Delta</figcaption></figure> |</p>
 <p><em>A "sandwich" comparison showing the baseline, the new state, and the highlighted pixel delta.</em></p>
 <h3>Real-World Finding: From 404 to Overflow Resolution</h3>
 <p>Visual regression testing is particularly effective for catching "cumulative" bugs—issues that only appear once I integrate multiple components. During the development of this tool, I encountered a three-stage regression that perfectly illustrated the system's value.</p>
@@ -260,7 +260,7 @@ jobs:
 <p>I implemented a fix using Tailwind's <code>truncate</code> and <code>flex-wrap</code> utilities, ensuring that assets are readable even on the narrowest devices.</p>
 <p>| 1. Missing | 2. Diff | 3. Fixed |</p>
 <p>| :---: | :---: | :---: |</p>
-<p>| <figure><img src="/assets/studies/deployment-impact-analyzer/before-mobile.svg" alt="404 Error" /><figcaption>404 Error</figcaption></figure> | <figure><img src="/assets/studies/deployment-impact-analyzer/diff-mobile.svg" alt="Regression Delta" /><figcaption>Regression Delta</figcaption></figure> | <figure><img src="/assets/studies/deployment-impact-analyzer/after-mobile.svg" alt="Resolution" /><figcaption>Resolution</figcaption></figure> |</p>
+<p>| <figure><img src="/assets/studies/deployment-impact-analyzer/before-mobile.svg" alt="404 Error" loading="lazy" decoding="async" /><figcaption>404 Error</figcaption></figure> | <figure><img src="/assets/studies/deployment-impact-analyzer/diff-mobile.svg" alt="Regression Delta" loading="lazy" decoding="async" /><figcaption>Regression Delta</figcaption></figure> | <figure><img src="/assets/studies/deployment-impact-analyzer/after-mobile.svg" alt="Resolution" loading="lazy" decoding="async" /><figcaption>Resolution</figcaption></figure> |</p>
 <p><em>The mobile resolution sequence: from a 404 state to an overflow regression, and finally the resolved responsive layout.</em></p>
 <h2>Lessons Learned</h2>
 <p>The core engineering insight from this project is the value of multi-layered verification. Static analysis maps the system's structural vulnerabilities, but visual diffing provides the actual confirmation of interface integrity. Merging these workflows converts unpredictable visual evaluation into a deterministic, programmatic check.</p>

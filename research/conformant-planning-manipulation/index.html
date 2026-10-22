@@ -14,7 +14,7 @@
     <meta data-rh="true" property="og:site_name" content="Ariel Anders Portfolio" />
     <meta data-rh="true" property="og:title" content="Reliably Arranging Objects: Conformant Planning | Ariel Anders, PhD" />
     <meta data-rh="true" property="og:description" content="My MIT CSAIL PhD dissertation on conformant planning for robot manipulation under uncertainty, featuring fixture-augmented optimization, belief-state transition search, and empirical action noise characterization." />
-    <meta data-rh="true" property="og:type" content="website" />
+    <meta data-rh="true" property="og:type" content="article" />
     <meta data-rh="true" property="og:url" content="https://arii.github.io/research/conformant-planning-manipulation/" />
     <meta data-rh="true" property="og:image" content="https://arii.github.io/assets/research/phd/icra_presentation.webp" />
     <!-- Twitter Card -->
@@ -111,7 +111,7 @@
     {
       "@type": "Person",
       "@id": "https://arii.github.io/about#person",
-      "url": "https://arii.github.io/about",
+      "url": "https://arii.github.io/about/",
       "name": "Ariel Anders, PhD",
       "jobTitle": "Robotics & AI Consulting Engineer",
       "email": "anders.ariel@gmail.com",
@@ -148,14 +148,14 @@
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </noscript>
-    <script type="module" crossorigin src="/assets/index-DP5Nm8y4.js"></script>
+    <script type="module" crossorigin src="/assets/index-3A29JUAd.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-BD-e1e1Q.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-Bo77nVrp.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-DliGEDQ7.css">
   </head>
   <body>
     <div id="root"><main style="max-width:1100px;margin:0 auto;padding:2rem 1rem;"><header><h1>Reliably Arranging Objects: Conformant Planning</h1><p><strong>Author:</strong> Ariel Anders, PhD | <strong>Date:</strong> 2021-05-20 | <strong>Category:</strong> Robotics &amp; Autonomy</p><p><em>My MIT CSAIL PhD dissertation on conformant planning for robot manipulation under uncertainty, featuring fixture-augmented optimization, belief-state transition search, and empirical action noise characterization.</em></p></header><hr /><article><h2>Overview</h2>
 <p>This research forms the core of my PhD dissertation at <strong>MIT CSAIL</strong>, advised by <strong>Prof. Leslie Pack Kaelbling</strong> and <strong>Prof. Tomás Lozano-Pérez</strong>, with committee member <strong>Prof. Sertac Karaman</strong>. My work enables general-purpose helper robots to reliably arrange unanchored objects into desired target configurations despite severe pose uncertainty caused by inaccurate sensing, control errors, and unknown physical friction. If you are developing physical automation systems and seeking <a href="https://arii.github.io/about/">autonomous systems advisory</a>, explore my consulting background and engineering experience.</p>
-<p><a href="https://www.youtube.com/watch?v=omdHFeBBYZ0#no-embed"><figure><img src="/assets/research/phd/icra_presentation.webp" alt="Figure 1: Willow Garage PR2 robot performing physical conformant manipulation to arrange blocks into tight arrangements under pose uncertainty without visual feedback. | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=omdHFeBBYZ0#no-embed" /><figcaption>Figure 1: Willow Garage PR2 robot performing physical conformant manipulation to arrange blocks into tight arrangements under pose uncertainty without visual feedback. | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=omdHFeBBYZ0#no-embed</figcaption></figure></a></p>
+<p><a href="https://www.youtube.com/watch?v=omdHFeBBYZ0#no-embed"><figure><img src="/assets/research/phd/icra_presentation.webp" alt="Figure 1: Willow Garage PR2 robot performing physical conformant manipulation to arrange blocks into tight arrangements under pose uncertainty without visual feedback. | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=omdHFeBBYZ0#no-embed" loading="lazy" decoding="async" /><figcaption>Figure 1: Willow Garage PR2 robot performing physical conformant manipulation to arrange blocks into tight arrangements under pose uncertainty without visual feedback. | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=omdHFeBBYZ0#no-embed</figcaption></figure></a></p>
 <hr />
 <h3>Approaches Explored</h3>
 <p>This research explores two distinct paradigms for conformant manipulation under severe uncertainty:</p>
@@ -168,7 +168,7 @@
 <li><strong>Paper & Overview:</strong> <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=NM6SfiEAAAAJ&amp;citation_for_view=NM6SfiEAAAAJ:MXK_kJrjxJIC">Reliably Arranging Objects in the Real World (ICRA 2018) ↗</a></li>
 </ul>
 <hr />
-<p><a href="https://www.youtube.com/watch?v=so-9kkQXlxc#no-embed"><figure><img src="/assets/research/phd/conformant_demo.webp" alt="Figure 2: ICRA 2018 paper presentation and conference spotlight breakdown. | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=so-9kkQXlxc#no-embed" /><figcaption>Figure 2: ICRA 2018 paper presentation and conference spotlight breakdown. | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=so-9kkQXlxc#no-embed</figcaption></figure></a></p>
+<p><a href="https://www.youtube.com/watch?v=so-9kkQXlxc#no-embed"><figure><img src="/assets/research/phd/conformant_demo.webp" alt="Figure 2: ICRA 2018 paper presentation and conference spotlight breakdown. | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=so-9kkQXlxc#no-embed" loading="lazy" decoding="async" /><figcaption>Figure 2: ICRA 2018 paper presentation and conference spotlight breakdown. | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=so-9kkQXlxc#no-embed</figcaption></figure></a></p>
 <hr />
 <h2>Part 1: Conformant Planning through Plan Improvement</h2>
 <p>When manipulators perform multi-step assembly or packaging tasks—such as placing 1-inch polyomino Tetris blocks into tight grid slots—small position and angle errors accumulate across sequential actions. Open-loop trajectory execution frequently fails because slight misalignments cause binding, jamming, or collision.</p>
@@ -180,7 +180,7 @@
 </ul>
 <h4>Plan Improvement Video Breakdowns</h4>
 <h3>1. Nominal Trajectory: Plan Improvement with Fixture Placement (1/3)</h3>
-<p><a href="https://www.youtube.com/watch?v=MBsnNbD18tU#no-embed"><figure><img src="/assets/research/phd/belief_1.webp" alt="Nominal Trajectory: Plan Improvement with Fixture Placement | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=MBsnNbD18tU#no-embed" /><figcaption>Nominal Trajectory: Plan Improvement with Fixture Placement | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=MBsnNbD18tU#no-embed</figcaption></figure></a></p>
+<p><a href="https://www.youtube.com/watch?v=MBsnNbD18tU#no-embed"><figure><img src="/assets/research/phd/belief_1.webp" alt="Nominal Trajectory: Plan Improvement with Fixture Placement | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=MBsnNbD18tU#no-embed" loading="lazy" decoding="async" /><figcaption>Nominal Trajectory: Plan Improvement with Fixture Placement | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=MBsnNbD18tU#no-embed</figcaption></figure></a></p>
 <ul>
 <li><strong>Goal:</strong> Execute planar assembly of disjoint block clusters into a single composite structure via non-prehensile pushing and fixturing.</li>
 <li><strong>Execution:</strong> A linear pusher translates the lower cluster along an open-loop trajectory to mate seamlessly with the stationary upper target.</li>
@@ -188,7 +188,7 @@
 </ul>
 <hr />
 <h3>2. Failure Mode: Open-Loop Drift Under Uncertainty (2/3)</h3>
-<p><a href="https://www.youtube.com/watch?v=yjhySqcgLi4#no-embed"><figure><img src="/assets/research/phd/belief_2.webp" alt="Failure Mode: Open-Loop Drift Under Uncertainty | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=yjhySqcgLi4#no-embed" /><figcaption>Failure Mode: Open-Loop Drift Under Uncertainty | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=yjhySqcgLi4#no-embed</figcaption></figure></a></p>
+<p><a href="https://www.youtube.com/watch?v=yjhySqcgLi4#no-embed"><figure><img src="/assets/research/phd/belief_2.webp" alt="Failure Mode: Open-Loop Drift Under Uncertainty | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=yjhySqcgLi4#no-embed" loading="lazy" decoding="async" /><figcaption>Failure Mode: Open-Loop Drift Under Uncertainty | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=yjhySqcgLi4#no-embed</figcaption></figure></a></p>
 <ul>
 <li><strong>Perturbation:</strong> Introduced stochastic noise into initial object poses and actuation dynamics.</li>
 <li><strong>Failure Mechanism:</strong> Unconstrained degrees of freedom lead to compounding kinematic drift and premature rotation.</li>
@@ -196,7 +196,7 @@
 </ul>
 <hr />
 <h3>3. Robust Execution: Passive Mechanical Funneling via Fixture Placement (3/3)</h3>
-<p><a href="https://www.youtube.com/watch?v=ubUMq8Rnb18#no-embed"><figure><img src="/assets/research/phd/refinement.webp" alt="Robust Execution: Passive Mechanical Funneling via Fixture Placement | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=ubUMq8Rnb18#no-embed" /><figcaption>Robust Execution: Passive Mechanical Funneling via Fixture Placement | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=ubUMq8Rnb18#no-embed</figcaption></figure></a></p>
+<p><a href="https://www.youtube.com/watch?v=ubUMq8Rnb18#no-embed"><figure><img src="/assets/research/phd/refinement.webp" alt="Robust Execution: Passive Mechanical Funneling via Fixture Placement | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=ubUMq8Rnb18#no-embed" loading="lazy" decoding="async" /><figcaption>Robust Execution: Passive Mechanical Funneling via Fixture Placement | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=ubUMq8Rnb18#no-embed</figcaption></figure></a></p>
 <ul>
 <li><strong>Strategy:</strong> Augment the action space with static intermediate fixtures (e.g., L-brackets) along the configuration boundary.</li>
 <li><strong>Mechanism:</strong> Fixtures act as physical invariant sets, passively arresting off-axis drift and squaring block orientations upon contact.</li>
@@ -212,11 +212,11 @@
 <li><strong>Shrinkage Guarantee:</strong> Identifies action sequences <code>a ∈ A</code> that guarantee monotonic support reduction prior to final insertion:</li>
 </ul>
 <pre><code class="language-text">Support(b_{t+1}) ⊆ Support(b_t)</code></pre>
-<p><figure><img src="/assets/research/phd/sliding_2.webp" alt="The initial object placement uncertainty for the PR2 robot was modeled as ±0.2 inches in both x and y coordinates and ±15 degrees in rotation based on physical experiment data" /><figcaption>The initial object placement uncertainty for the PR2 robot was modeled as ±0.2 inches in both x and y coordinates and ±15 degrees in rotation based on physical experiment data</figcaption></figure> <figure><img src="/assets/research/phd/sixblock.png" alt="Six block arrangement task on PR2" /><figcaption>Six block arrangement task on PR2</figcaption></figure></p>
+<p><figure><img src="/assets/research/phd/sliding_2.webp" alt="The initial object placement uncertainty for the PR2 robot was modeled as ±0.2 inches in both x and y coordinates and ±15 degrees in rotation based on physical experiment data" loading="lazy" decoding="async" /><figcaption>The initial object placement uncertainty for the PR2 robot was modeled as ±0.2 inches in both x and y coordinates and ±15 degrees in rotation based on physical experiment data</figcaption></figure> <figure><picture><source srcset="/assets/research/phd/sixblock.webp" type="image/webp" /><img src="/assets/research/phd/sixblock.png" alt="Six block arrangement task on PR2" loading="lazy" decoding="async" /></picture><figcaption>Six block arrangement task on PR2</figcaption></figure></p>
 <p><em>Figure 3 & 4: Precision placement via contact funneling (left) and six-block arrangement setup on PR2 (right).</em></p>
 <h3>Belief State Overlay & Action Noise Characterization</h3>
 <p>To ground simulated transitions in physical reality, empirical noise characterization and spatial particle overlays visualize contact uncertainty during execution.</p>
-<p><figure><img src="/assets/research/phd/sliding_1.webp" alt="Belief State Overlay Visualization" /><figcaption>Belief State Overlay Visualization</figcaption></figure></p>
+<p><figure><img src="/assets/research/phd/sliding_1.webp" alt="Belief State Overlay Visualization" loading="lazy" decoding="async" /><figcaption>Belief State Overlay Visualization</figcaption></figure></p>
 <p><em>Figure 10: Algorithm belief-state overlay depicting particle distributions and empirical contact confidence bounds during manipulation.</em></p>
 <h3>Table and Board Relative Localization Pipeline</h3>
 <ul>
@@ -224,7 +224,7 @@
 <li><strong>Tactile Surface Exploration:</strong> To resolve visual occlusions and calibration offsets, the robot switches to a compliant Cartesian controller, guiding its end-effector/paddle to slide directly against the rigid reference edges (e.g., the sides of the fixture/board).</li>
 <li><strong>Pose Registration & Transform Fitting:</strong> By logging the contact trajectory along the physical boundaries, the system fits a rigid geometric transform, producing a high-precision spatial calibration between the PR2 base and the workspace.</li>
 </ul>
-<p><a href="https://www.youtube.com/watch?v=bWjzn89H1x4#no-embed"><figure><img src="/assets/research/phd/noise_model.webp" alt="Table and Board Relative Localization Pipeline | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=bWjzn89H1x4#no-embed" /><figcaption>Table and Board Relative Localization Pipeline | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=bWjzn89H1x4#no-embed</figcaption></figure></a></p>
+<p><a href="https://www.youtube.com/watch?v=bWjzn89H1x4#no-embed"><figure><img src="/assets/research/phd/noise_model.webp" alt="Table and Board Relative Localization Pipeline | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=bWjzn89H1x4#no-embed" loading="lazy" decoding="async" /><figcaption>Table and Board Relative Localization Pipeline | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=bWjzn89H1x4#no-embed</figcaption></figure></a></p>
 <hr />
 <h2>Citation & Thesis Downloads</h2>
 <h3>IEEE ICRA Paper & Dissertation Record</h3>
@@ -248,7 +248,7 @@
 }</code></pre>
 <hr />
 <h2>Defense Presentation & Visuals</h2>
-<p><figure><img src="/assets/research/phd/eric.png" alt="Eric the Robot Thesis Mascot" /><figcaption>Eric the Robot Thesis Mascot</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/phd/eric.webp" type="image/webp" /><img src="/assets/research/phd/eric.png" alt="Eric the Robot Thesis Mascot" loading="lazy" decoding="async" /></picture><figcaption>Eric the Robot Thesis Mascot</figcaption></figure></p>
 <p><em>Figure 12: "Eric", the robot thesis mascot used to visually convey belief-state uncertainty and contact constraints.</em></p>
 <h3>Thesis Mascot: "Eric" the Robot</h3>
 <p>To communicate these theoretical planning concepts during the defense presentation and dissertation, I created graphics of <strong>"Eric the red robot"</strong>, a cartoon robot mascot inspired by Leslie's stick figures:</p>
@@ -256,7 +256,7 @@
 <li><strong>"Blindfolded Eric":</strong> Illustrating sensorless manipulation sequences where physical contact boundaries replace visual perception.</li>
 <li><strong>"Picketing Eric":</strong> Highlighting edge cases where open-loop trajectories fail due to unexpected friction or rotational torque.</li>
 </ul>
-<p><figure><img src="/assets/research/phd/eric2.png" alt="Blindfolded Eric mascot illustrating sensorless manipulation" /><figcaption>Blindfolded Eric mascot illustrating sensorless manipulation</figcaption></figure> <figure><img src="/assets/research/phd/eric1.png" alt="Picketing Eric mascot illustrating open-loop failure modes" /><figcaption>Picketing Eric mascot illustrating open-loop failure modes</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/phd/eric2.webp" type="image/webp" /><img src="/assets/research/phd/eric2.png" alt="Blindfolded Eric mascot illustrating sensorless manipulation" loading="lazy" decoding="async" /></picture><figcaption>Blindfolded Eric mascot illustrating sensorless manipulation</figcaption></figure> <figure><picture><source srcset="/assets/research/phd/eric1.webp" type="image/webp" /><img src="/assets/research/phd/eric1.png" alt="Picketing Eric mascot illustrating open-loop failure modes" loading="lazy" decoding="async" /></picture><figcaption>Picketing Eric mascot illustrating open-loop failure modes</figcaption></figure></p>
 <p><em>Figure 13 & 14: "Blindfolded Eric" demonstrating sensorless contact funnels (left) and "Picketing Eric" illustrating trajectory failure modes under friction (right).</em></p></article></main></div>
   </body>
 </html>

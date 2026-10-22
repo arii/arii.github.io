@@ -14,7 +14,7 @@
     <meta data-rh="true" property="og:site_name" content="Ariel Anders Portfolio" />
     <meta data-rh="true" property="og:title" content="CAD/CAM Robotic Dental Crowning Workflow | Ariel Anders, PhD" />
     <meta data-rh="true" property="og:description" content="Dynamic registration, kinematic calibration, and interactive UI for autonomous dental crowning." />
-    <meta data-rh="true" property="og:type" content="website" />
+    <meta data-rh="true" property="og:type" content="article" />
     <meta data-rh="true" property="og:url" content="https://arii.github.io/research/cad-cam-dental-workflow/" />
     <meta data-rh="true" property="og:image" content="https://arii.github.io/assets/research/dental.jpg" />
     <!-- Twitter Card -->
@@ -111,7 +111,7 @@
     {
       "@type": "Person",
       "@id": "https://arii.github.io/about#person",
-      "url": "https://arii.github.io/about",
+      "url": "https://arii.github.io/about/",
       "name": "Ariel Anders, PhD",
       "jobTitle": "Robotics & AI Consulting Engineer",
       "email": "anders.ariel@gmail.com",
@@ -148,9 +148,9 @@
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </noscript>
-    <script type="module" crossorigin src="/assets/index-DP5Nm8y4.js"></script>
+    <script type="module" crossorigin src="/assets/index-3A29JUAd.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-BD-e1e1Q.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-Bo77nVrp.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-DliGEDQ7.css">
   </head>
   <body>
     <div id="root"><main style="max-width:1100px;margin:0 auto;padding:2rem 1rem;"><header><h1>CAD/CAM Robotic Dental Crowning Workflow</h1><p><strong>Author:</strong> Ariel Anders, PhD | <strong>Date:</strong> 2014-06-01 | <strong>Category:</strong> Medical Robotics</p><p><em>Dynamic registration, kinematic calibration, and interactive UI for autonomous dental crowning.</em></p></header><hr /><article><h2>CAD/CAM Robotic Dental Crowning & Dynamic Registration Workflow</h2>
@@ -161,12 +161,12 @@
 <li><strong>Dental Implant Preparation:</strong> I extended this work to execute implant placement procedures. To account for patient movement during the procedure, I designed and implemented <strong>dynamic registration</strong>. This involved using a passive robotic arm (Microscribe MX) as a real-time feedback mechanism to track the position of the jaw.</li>
 </ol>
 <p>To facilitate this, I developed surgical control software—integrating Visual Studio, Matlab, and ORiN APIs—to synchronize the active robotic arm (Denso VM-B01G) with real-time positional data, allowing for high-precision milling and drilling aligned with patient-specific intraoral geometry.</p>
-<p><figure><img src="/assets/research/dental.jpg" alt="CAD/CAM Robotic Dental Crowning Setup" /><figcaption>CAD/CAM Robotic Dental Crowning Setup</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/dental.webp" type="image/webp" /><img src="/assets/research/dental.jpg" alt="CAD/CAM Robotic Dental Crowning Setup" loading="lazy" decoding="async" /></picture><figcaption>CAD/CAM Robotic Dental Crowning Setup</figcaption></figure></p>
 <p><em>Figure 1: Robotic dental crowning experimental setup and software user interface at UCSC Bionics Lab.</em></p>
 <hr />
 <h2>Technical Context & Surgical Challenge</h2>
 <p>Traditional dental restoration and implant preparation rely on manual handpieces, impression molds, and mechanical jigs. Integrating industrial 6-DOF robotic arms (such as the Denso VM-B01G) with real-time tracking (via MicroScribe 3D digitization arms) enables sub-millimeter precision during enamel preparation and crown alignment.</p>
-<p><figure><img src="/assets/research/dental/dental_robotics-000.png" alt="Robotic Dental System Architecture" /><figcaption>Robotic Dental System Architecture</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/dental/dental_robotics-000.webp" type="image/webp" /><img src="/assets/research/dental/dental_robotics-000.png" alt="Robotic Dental System Architecture" loading="lazy" decoding="async" /></picture><figcaption>Robotic Dental System Architecture</figcaption></figure></p>
 <p><em>Figure 2: Architectural diagram of the dynamic registration dental robotics setup, featuring the Denso 6-DOF robot arm, MicroScribe tracking arm, and intraoral jaw model.</em></p>
 <p>Key engineering challenges included:</p>
 <ol>
@@ -177,9 +177,9 @@
 <hr />
 <h2>Kinematic Formulation & Frame Calibration</h2>
 <p>To achieve precise alignment between the robotic tool tip and the target tooth site, I established coordinate frames across the arm and tracking sensor:</p>
-<p><figure><img src="/assets/research/dental/dental_robotics-001.png" alt="Coordinate Frame Mapping" /><figcaption>Coordinate Frame Mapping</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/dental/dental_robotics-001.webp" type="image/webp" /><img src="/assets/research/dental/dental_robotics-001.png" alt="Coordinate Frame Mapping" loading="lazy" decoding="async" /></picture><figcaption>Coordinate Frame Mapping</figcaption></figure></p>
 <p><em>Figure 3: Kinematic coordinate frame mapping between robot base D{0}, end-effector D{6}, tracking base MX{0}, and tracking probe tip MX{6}.</em></p>
-<p><figure><img src="/assets/research/dental/dental_robotics-002.png" alt="Transform Chain Flowchart" /><figcaption>Transform Chain Flowchart</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/dental/dental_robotics-002.webp" type="image/webp" /><img src="/assets/research/dental/dental_robotics-002.png" alt="Transform Chain Flowchart" loading="lazy" decoding="async" /></picture><figcaption>Transform Chain Flowchart</figcaption></figure></p>
 <p><em>Figure 4: Kinematic transformation chain flow used to solve for relative tool-to-implant spatial transforms.</em></p>
 <h3>Homogeneous Transformation Math</h3>
 <p>I solved the spatial position of the target tooth implant site relative to the robot end-effector <code>M6_P_ImplantLoc</code> through the transformation chain:</p>
@@ -191,21 +191,21 @@
 <li><code>T_MXBase_to_MX6</code>: Joint position readout matrix from the MicroScribe tracking arm.</li>
 <li><code>P_Tip</code>: Offset vector for the target point relative to the probe tip frame <code>MX{6}</code>.</li>
 </ul>
-<p><figure><img src="/assets/research/dental/dental_robotics-008.png" alt="Implant Target Frame Transformation" /><figcaption>Implant Target Frame Transformation</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/dental/dental_robotics-008.webp" type="image/webp" /><img src="/assets/research/dental/dental_robotics-008.png" alt="Implant Target Frame Transformation" loading="lazy" decoding="async" /></picture><figcaption>Implant Target Frame Transformation</figcaption></figure></p>
 <p><em>Figure 5: Vector transformation diagram mapping target implant location vector M6_P_ImplantLoc within the end-effector frame.</em></p>
 <hr />
 <h2>Closed-Loop Dynamic Tracking System</h2>
 <p>I implemented a closed-loop controller that continuously queries the tracking arm position and adjusts the Denso robot manipulator commands in real time.</p>
-<p><figure><img src="/assets/research/dental/dental_robotics-003.png" alt="Closed Loop Controller Architecture" /><figcaption>Closed Loop Controller Architecture</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/dental/dental_robotics-003.webp" type="image/webp" /><img src="/assets/research/dental/dental_robotics-003.png" alt="Closed Loop Controller Architecture" loading="lazy" decoding="async" /></picture><figcaption>Closed Loop Controller Architecture</figcaption></figure></p>
 <p><em>Figure 6: Closed-loop dynamic tracking control system diagram for real-time jaw motion compensation.</em></p>
-<p><figure><img src="/assets/research/dental/dental_robotics-004.png" alt="Real-time Tracking Control Software UI" /><figcaption>Real-time Tracking Control Software UI</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/dental/dental_robotics-004.webp" type="image/webp" /><img src="/assets/research/dental/dental_robotics-004.png" alt="Real-time Tracking Control Software UI" loading="lazy" decoding="async" /></picture><figcaption>Real-time Tracking Control Software UI</figcaption></figure></p>
 <p><em>Figure 7: Real-time surgical monitoring software interface showing active frame tracking and toolpath progress.</em></p>
 <hr />
 <h2>Experimental Results & Tracking Accuracy</h2>
 <p>I benchmarked tracking accuracy across simulated patient motion profiles using anatomical dental phantom models.</p>
-<p><figure><img src="/assets/research/dental/dental_robotics-006.png" alt="Positional Tracking Error Plot" /><figcaption>Positional Tracking Error Plot</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/dental/dental_robotics-006.webp" type="image/webp" /><img src="/assets/research/dental/dental_robotics-006.png" alt="Positional Tracking Error Plot" loading="lazy" decoding="async" /></picture><figcaption>Positional Tracking Error Plot</figcaption></figure></p>
 <p><em>Figure 8: Measured 3D positional tracking error over time during dynamic compensation testing.</em></p>
-<p><figure><img src="/assets/research/dental/dental_robotics-007.png" alt="Drill Tip Alignment Accuracy Plot" /><figcaption>Drill Tip Alignment Accuracy Plot</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/dental/dental_robotics-007.webp" type="image/webp" /><img src="/assets/research/dental/dental_robotics-007.png" alt="Drill Tip Alignment Accuracy Plot" loading="lazy" decoding="async" /></picture><figcaption>Drill Tip Alignment Accuracy Plot</figcaption></figure></p>
 <p><em>Figure 9: Alignment error distribution across experimental drilling trials, demonstrating sub-millimeter geometric accuracy.</em></p>
 <p>Experimental results verified:</p>
 <ul>
@@ -214,7 +214,7 @@
 </ul>
 <hr />
 <h2>Video Demonstrations & Media</h2>
-<p><a href="https://www.youtube.com/watch?v=tXif7xeZmGI#no-embed"><figure><img src="/assets/research/dental/dental_robotics.webp" alt="Dental Robotics Demonstration Video | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=tXif7xeZmGI#no-embed" /><figcaption>Dental Robotics Demonstration Video | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=tXif7xeZmGI#no-embed</figcaption></figure></a></p>
+<p><a href="https://www.youtube.com/watch?v=tXif7xeZmGI#no-embed"><figure><img src="/assets/research/dental/dental_robotics.webp" alt="Dental Robotics Demonstration Video | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=tXif7xeZmGI#no-embed" loading="lazy" decoding="async" /><figcaption>Dental Robotics Demonstration Video | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=tXif7xeZmGI#no-embed</figcaption></figure></a></p>
 <hr />
 <h2>Downloadable Technical Report</h2>
 <ul>
