@@ -148,19 +148,18 @@
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </noscript>
-    <script type="module" crossorigin src="/assets/index-Cx8KGbnl.js"></script>
+    <script type="module" crossorigin src="/assets/index-DLxqFD1w.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-BD-e1e1Q.js">
     <link rel="stylesheet" crossorigin href="/assets/index-DKlfe1vf.css">
   </head>
   <body>
-    <div id="root"><main style="max-width:1100px;margin:0 auto;padding:2rem 1rem;"><header><h1>CAD/CAM Robotic Dental Crowning Workflow</h1><p><strong>Author:</strong> Ariel Anders, PhD | <strong>Date:</strong> 2014-06-01 | <strong>Category:</strong> Medical Robotics</p><p><em>Dynamic registration, kinematic calibration, and interactive UI for autonomous dental crowning.</em></p></header><hr /><article><h2>CAD/CAM Robotic Dental Crowning & Dynamic Registration Workflow</h2>
-<h2>Autonomous Surgical Robotics at Bionics Lab UCSC</h2>
-<p>The <strong>CAD/CAM Dental Robotics</strong> project at the <strong>Bionics Lab, University of California, Santa Cruz (UCSC)</strong> focused on the development of an autonomous robotic system for semi-autonomous dental restoration. My research encompassed two primary areas:</p>
+    <div id="root"><main style="max-width:1100px;margin:0 auto;padding:2rem 1rem;"><header><h1>CAD/CAM Robotic Dental Crowning Workflow</h1><p><strong>Author:</strong> Ariel Anders, PhD | <strong>Date:</strong> 2014-06-01 | <strong>Category:</strong> Medical Robotics</p><p><em>Dynamic registration, kinematic calibration, and interactive UI for autonomous dental crowning.</em></p></header><hr /><article><h2>Autonomous Surgical Robotics at Bionics Lab UCSC</h2>
+<p>The <strong>CAD/CAM Dental Robotics</strong> project at the <strong>Bionics Lab, University of California, Santa Cruz (UCSC)</strong> built a semi-autonomous robotic system for dental restoration. My research encompassed two primary areas:</p>
 <ol>
 <li><strong>Dental Crowning Preparation:</strong> I developed a workflow to generate milling trajectories from 3D-digitized tooth models, enabling the robotic arm to autonomously mill a boundary around the tooth.</li>
 <li><strong>Dental Implant Preparation:</strong> I extended this work to execute implant placement procedures. To account for patient movement during the procedure, I designed and implemented <strong>dynamic registration</strong>. This involved using a passive robotic arm (Microscribe MX) as a real-time feedback mechanism to track the position of the jaw.</li>
 </ol>
-<p>To facilitate this, I developed surgical control software—integrating Visual Studio, Matlab, and ORiN APIs—to synchronize the active robotic arm (Denso VM-B01G) with real-time positional data, allowing for high-precision milling and drilling aligned with patient-specific intraoral geometry.</p>
+<p>I built the surgical control software—integrating Visual Studio, Matlab, and ORiN APIs—to synchronize the active robotic arm (Denso VM-B01G) with real-time positional data, allowing for high-precision milling and drilling aligned with patient-specific intraoral geometry.</p>
 <p><figure><picture><source srcset="/assets/research/dental.webp" type="image/webp" /><img src="/assets/research/dental.jpg" alt="CAD/CAM Robotic Dental Crowning Setup" loading="lazy" decoding="async" /></picture><figcaption>CAD/CAM Robotic Dental Crowning Setup</figcaption></figure></p>
 <p><em>Figure 1: Robotic dental crowning experimental setup and software user interface at UCSC Bionics Lab.</em></p>
 <hr />
@@ -182,7 +181,7 @@
 <p><figure><picture><source srcset="/assets/research/dental/dental_robotics-002.webp" type="image/webp" /><img src="/assets/research/dental/dental_robotics-002.png" alt="Transform Chain Flowchart" loading="lazy" decoding="async" /></picture><figcaption>Transform Chain Flowchart</figcaption></figure></p>
 <p><em>Figure 4: Kinematic transformation chain flow used to solve for relative tool-to-implant spatial transforms.</em></p>
 <h3>Homogeneous Transformation Math</h3>
-<p>I solved the spatial position of the target tooth implant site relative to the robot end-effector <code>M6_P_ImplantLoc</code> through the transformation chain:</p>
+<p>I computed the position of the target tooth implant site relative to the robot end-effector <code>M6_P_ImplantLoc</code> through the transformation chain:</p>
 <pre><code class="language-text">T_Implant = T_D6_to_Base * T_Base_to_MXBase * T_MXBase_to_MX6 * P_Tip</code></pre>
 <p>Where:</p>
 <ul>
@@ -211,6 +210,8 @@
 <ul>
 <li><strong>Mean Spatial Tracking Accuracy:</strong> Sub-millimeter position accuracy (< 0.45 mm) across dynamic movement profiles.</li>
 <li><strong>Control Loop Rate:</strong> Real-time compensation loop running at 100 Hz update frequency.</li>
+<li>Demonstrated real-time dynamic registration for dental implant preparation and crowning.</li>
+<li>Verified sub-millimeter trajectory execution under clinician-in-the-loop oversight.</li>
 </ul>
 <hr />
 <h2>Video Demonstrations & Media</h2>
@@ -219,12 +220,6 @@
 <h2>Downloadable Technical Report</h2>
 <ul>
 <li>📄 <a href="https://raw.githubusercontent.com/arii/arii.github.io/main/reports/report_dental.pdf">Download Dynamic Registration for Dental Robotics Report (PDF)</a></li>
-</ul>
-<hr />
-<h2>Research Significance</h2>
-<ul>
-<li>Demonstrated real-time dynamic registration for dental implant preparation and crowning.</li>
-<li>Verified sub-millimeter trajectory execution under clinician-in-the-loop oversight.</li>
 </ul></article></main></div>
   </body>
 </html>

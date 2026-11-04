@@ -155,14 +155,14 @@
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </noscript>
-    <script type="module" crossorigin src="/assets/index-Cx8KGbnl.js"></script>
+    <script type="module" crossorigin src="/assets/index-DLxqFD1w.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-BD-e1e1Q.js">
     <link rel="stylesheet" crossorigin href="/assets/index-DKlfe1vf.css">
   </head>
   <body>
     <div id="root"><main style="max-width:1100px;margin:0 auto;padding:2rem 1rem;"><header><h1>Visual Impact / UX Audit</h1><p><strong>Author:</strong> Ariel Anders, PhD | <strong>Date:</strong> 2026-06-19 | <strong>Category:</strong> DevAI</p><p><strong>Tags:</strong> Playwright, CI/CD, UX Audit, Dependency Graph, Automation</p><p><em>How I built a semantic visual impact analysis pipeline using dependency-cruiser, Playwright screenshot diffing, and automated severity scoring.</em></p></header><hr /><article><p>LLM code generation introduces unintended visual side effects—hallucinated UI components, modified badge styles, shifted accents, or unintended layout changes. Reviewing these multi-file diffs manually is error-prone, running full end-to-end test suites on every commit is too slow, and standard unit tests completely miss visual artifacts.</p>
-<p>I built the <strong>Deployment Impact Analyzer</strong> to catch these discrepancies automatically. The pipeline traces every code modification through the project's dependency graph, identifies which user-facing routes are touched, and triggers targeted Playwright visual diffs using Pixelmatch. By scoping screenshots strictly to impacted views, it flags hallucinated elements and styling shifts directly in the pull request while cutting visual testing volume by up to 90%.</p>
-<h2>The Architecture</h2>
+<p>I built the <strong>Deployment Impact Analyzer</strong> to catch these discrepancies automatically. The pipeline traces every code modification through the project's dependency graph, identifies which user-facing routes are touched, and triggers targeted Playwright visual diffs using Pixelmatch. By scoping screenshots strictly to impacted views, it flags hallucinated elements and styling shifts directly in the pull request while sharply cutting visual testing volume.</p>
+<h2>How the pipeline fits together</h2>
 <pre><code class="language-mermaid">flowchart TD
     A[Pull Request Event] --&gt;|Webhook Trigger| B[Identify Changed Files]
     B --&gt;|git diff-tree| C[dependency-cruiser Analysis]
@@ -195,7 +195,7 @@
 </ul>
 <hr />
 <h2>1. Import Graph Parsing with dependency-cruiser</h2>
-<p>I didn't want to test every page if only the "About" section changed. To achieve targeted testing, I use <code>dependency-cruiser</code> to analyze the project's import graph.</p>
+<p>I wanted tests scoped to what changed — not every page when only the "About" section changed — so I use <code>dependency-cruiser</code> to analyze the project's import graph.</p>
 <p>When modifying a file, I trace its dependents up the tree until I reach an entry point (a route or a page component).</p>
 <pre><code class="language-bash"># Example logic for finding dependents
 npx depcruise --exclude &quot;^node_modules&quot; --output-type json src | \
@@ -222,7 +222,7 @@ npx depcruise --exclude &quot;^node_modules&quot; --output-type json src | \
 <p>If the score exceeds a configurable threshold, the pipeline marks the check as failed and requests a manual visual review.</p>
 <hr />
 <h2>4. GitHub Actions Integration</h2>
-<p>I orchestrated the entire system via GitHub Actions. I've optimized the workflow to use caching for the <code>dependency-cruiser</code> graph and parallelize Playwright workers to keep execution times under 5 minutes.</p>
+<p>I ran the whole system on GitHub Actions. I've optimized the workflow to use caching for the <code>dependency-cruiser</code> graph and parallelize Playwright workers to keep execution times under 5 minutes.</p>
 <pre><code class="language-yaml">name: Deployment Impact Analysis
 on: [pull_request]
 
@@ -239,7 +239,7 @@ jobs:
       - name: Post Report
         run: python scripts/send-jules-impact.py</code></pre>
 <h3>Example Report Output</h3>
-<p>When opening a PR, the analyzer posts a summary directly to the GitHub conversation. This allows developers to see the impact at a glance without leaving their workflow.</p>
+<p>When opening a PR, the analyzer posts a summary directly to the GitHub conversation. This lets developers see the impact at a glance, right inside their workflow.</p>
 <p>| Route | Visual Diff | Severity | Action |</p>
 <p>| :--- | :--- | :--- | :--- |</p>
 <p>| <code>/blog/:slug</code> | 12.4% | 🔴 HIGH | Manual Review Required |</p>
@@ -249,7 +249,6 @@ jobs:
 <p>| Before | After | Diff |</p>
 <p>| :---: | :---: | :---: |</p>
 <p>| <figure><img src="/assets/studies/deployment-impact-analyzer/before.svg" alt="Baseline" loading="lazy" decoding="async" /><figcaption>Baseline</figcaption></figure> | <figure><img src="/assets/studies/deployment-impact-analyzer/after.svg" alt="Current" loading="lazy" decoding="async" /><figcaption>Current</figcaption></figure> | <figure><img src="/assets/studies/deployment-impact-analyzer/diff.svg" alt="Visual Delta" loading="lazy" decoding="async" /><figcaption>Visual Delta</figcaption></figure> |</p>
-<p><em>A "sandwich" comparison showing the baseline, the new state, and the highlighted pixel delta.</em></p>
 <h3>Real-World Finding: From 404 to Overflow Resolution</h3>
 <p>Visual regression testing is particularly effective for catching "cumulative" bugs—issues that only appear once I integrate multiple components. During the development of this tool, I encountered a three-stage regression that perfectly illustrated the system's value.</p>
 <h4>1. The Initial State (Missing Route)</h4>
@@ -262,8 +261,7 @@ jobs:
 <p>| :---: | :---: | :---: |</p>
 <p>| <figure><img src="/assets/studies/deployment-impact-analyzer/before-mobile.svg" alt="404 Error" loading="lazy" decoding="async" /><figcaption>404 Error</figcaption></figure> | <figure><img src="/assets/studies/deployment-impact-analyzer/diff-mobile.svg" alt="Regression Delta" loading="lazy" decoding="async" /><figcaption>Regression Delta</figcaption></figure> | <figure><img src="/assets/studies/deployment-impact-analyzer/after-mobile.svg" alt="Resolution" loading="lazy" decoding="async" /><figcaption>Resolution</figcaption></figure> |</p>
 <p><em>The mobile resolution sequence: from a 404 state to an overflow regression, and finally the resolved responsive layout.</em></p>
-<h2>Lessons Learned</h2>
-<p>The core engineering insight from this project is the value of multi-layered verification. Static analysis maps the system's structural vulnerabilities, but visual diffing provides the actual confirmation of interface integrity. Merging these workflows converts unpredictable visual evaluation into a deterministic, programmatic check.</p>
-<p>The next evolution of this tool involves agentic auto-resolution: using LLMs to analyze the visual diff and decide if a change is an intentional improvement or an accidental regression.</p></article></main></div>
+<p>Static analysis maps structural vulnerabilities; visual diffing confirms interface integrity. Together they turn visual evaluation into a deterministic check.</p>
+<p>Next: agentic auto-resolution — an LLM reads the visual diff and decides whether the change is intentional or a regression.</p></article></main></div>
   </body>
 </html>

@@ -155,7 +155,7 @@
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </noscript>
-    <script type="module" crossorigin src="/assets/index-Cx8KGbnl.js"></script>
+    <script type="module" crossorigin src="/assets/index-DLxqFD1w.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-BD-e1e1Q.js">
     <link rel="stylesheet" crossorigin href="/assets/index-DKlfe1vf.css">
   </head>
@@ -173,7 +173,7 @@
 <p><strong>Stack:</strong> React • TypeScript • Python • Pydantic • GitHub Actions • BeautifulSoup</p>
 <p><figure><picture><source srcset="/assets/research/ai-experiments/wcs-scraper.webp" type="image/webp" /><img src="/assets/research/ai-experiments/wcs-scraper.png" alt="WCS Telemetry Scraper execution console and schema validation interface" loading="lazy" decoding="async" /></picture><figcaption>WCS Telemetry Scraper execution console and schema validation interface</figcaption></figure></p>
 <p>Tracking regional West Coast Swing event schedules and dancer registries from the <a href="https://worldwestcoastswingcouncil.com/events/">World Swing Dance Council</a> manually was a headache. Registration links broke often, and dates fell out of sync.</p>
-<p>To fix this, I wrote a lightweight scraper using <code>BeautifulSoup</code> and <code>Pydantic</code>. It ensures HTML table parsing resilience by searching across structural variations (such as both <code>tr.event-row</code> and <code>div.event-item</code> containers). It also handles missing registry links by creating fallback temporary hashes (<code>tmp_{hash(name)}</code>) so valid events never get dropped during ingestion.</p>
+<p>To fix this, I wrote a lightweight scraper using <code>BeautifulSoup</code> and <code>Pydantic</code>. It ensures HTML table parsing resilience by searching across structural variations (such as both <code>tr.event-row</code> and <code>div.event-item</code> containers). It also handles missing registry links by creating fallback temporary hashes (<code>tmp_{hash(name)}</code>) so every valid event survives ingestion.</p>
 <pre><code class="language-python"># etl/scraper.py - Pydantic validation &amp; fallback hashing
 from pydantic import BaseModel, Field
 from typing import Optional
@@ -189,7 +189,7 @@ def parse_registry_id(link_tag, event_name: str) -&gt; str:
     if link_tag and 'href' in link_tag.attrs:
         return link_tag['href'].split('/')[-1]
     return f&quot;tmp_{hash(event_name)}&quot;</code></pre>
-<p>The pipeline runs on a weekly GitHub Actions cron job. Before committing changes to <code>public/data/event_queue.json</code>, it checks <code>git diff --staged</code> to make sure I don't spam commit logs when event data hasn't changed.</p>
+<p>The pipeline runs on a weekly GitHub Actions cron job. Before committing changes to <code>public/data/event_queue.json</code>, it checks <code>git diff --staged</code> so commits only land when event data actually changes.</p>
 <pre><code class="language-yaml"># .github/workflows/wcs_etl.yml - Git diff guardrail
 - name: Commit and Push Data
   run: |
@@ -217,13 +217,13 @@ export function useWCSData() {
   return events;
 }</code></pre>
 <ul>
-<li><strong>The Result:</strong> The pipeline runs quietly in the background every Wednesday, keeping my frontend JSON data fresh with zero manual maintenance, while the lightweight client fetching prevents initial bundle bloat.</li>
+<li>The pipeline runs quietly in the background every Wednesday, keeping my frontend JSON data fresh, while the lightweight client fetching prevents initial bundle bloat.</li>
 </ul>
 <hr />
 <h2>2. Ecommerce Merchandising & Storefront Automation</h2>
 <p><strong>Stack:</strong> TypeScript • Printful REST API • Vector Processing</p>
 <p><figure><picture><source srcset="/assets/research/ai-experiments/ecommerce-automation.webp" type="image/webp" /><img src="/assets/research/ai-experiments/ecommerce-automation.png" alt="Printful REST API integration console showing automated variant mapping and catalog synchronization" loading="lazy" decoding="async" /></picture><figcaption>Printful REST API integration console showing automated variant mapping and catalog synchronization</figcaption></figure></p>
-<p>Setting up products manually on Printful—uploading artwork, recalculating margins, and mapping variants—became incredibly repetitive. To fix this, I built an automated pipeline that ingests source vector files, auto-clips dimensions to stay safely inside print zones, and syncs variants directly via the <a href="https://developers.printful.com/docs/">Printful API</a>.</p>
+<p>Setting up products manually on Printful—uploading artwork, recalculating margins, and mapping variants—got repetitive. To fix this, I built an automated pipeline that ingests source vector files, auto-clips dimensions to stay safely inside print zones, and syncs variants directly via the <a href="https://developers.printful.com/docs/">Printful API</a>.</p>
 <pre><code class="language-typescript">// sync/printful.ts - Automated variant payload creation
 export async function syncProductVariant(variantId: number, printFileUrl: string) {
   const res = await fetch(`https://api.printful.com/store/products/${variantId}`, {
@@ -240,7 +240,7 @@ export async function syncProductVariant(variantId: number, printFileUrl: string
   return res.json();
 }</code></pre>
 <ul>
-<li><strong>Why it matters:</strong> It removes the manual merchandising overhead and keeps product pricing and catalog nodes aligned in real time.</li>
+<li>It removes the manual merchandising overhead and keeps product pricing and catalog nodes aligned in real time.</li>
 </ul>
 <hr />
 <h2>3. Context-Aware Technical Blog Drafter</h2>
@@ -249,7 +249,7 @@ export async function syncProductVariant(variantId: number, printFileUrl: string
 <p>Drafting technical posts from scratch usually means wasting time fixing inconsistent code formatting or drift from established style guidelines.</p>
 <p>To speed up my workflow, I built a local RAG tool. It indexes previous Markdown posts into a local vector store, pulling my exact writing style, phrasing preferences, and code conventions straight into the LLM prompts.</p>
 <ul>
-<li><strong>The Impact:</strong> It hits the right structural hierarchy on the first try, cutting down initial drafting times by roughly 4x while keeping human editorial control.</li>
+<li>It hits the right structural hierarchy on the first try while keeping human editorial control.</li>
 </ul>
 <hr /></article></main></div>
   </body>

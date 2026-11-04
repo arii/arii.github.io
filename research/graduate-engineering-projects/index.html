@@ -148,13 +148,12 @@
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </noscript>
-    <script type="module" crossorigin src="/assets/index-Cx8KGbnl.js"></script>
+    <script type="module" crossorigin src="/assets/index-DLxqFD1w.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-BD-e1e1Q.js">
     <link rel="stylesheet" crossorigin href="/assets/index-DKlfe1vf.css">
   </head>
   <body>
-    <div id="root"><main style="max-width:1100px;margin:0 auto;padding:2rem 1rem;"><header><h1>Graduate Engineering Projects</h1><p><strong>Author:</strong> Ariel Anders, PhD | <strong>Date:</strong> 2015-12-05 | <strong>Category:</strong> Robotics &amp; Hardware</p><p><em>A showcase of advanced graduate-level engineering systems developed at MIT. These projects span real-time computer vision control, ordinal machine learning ranking, and parameterized hardware accelerators built using Bluespec SystemVerilog.</em></p></header><hr /><article><p>A showcase of advanced graduate-level engineering systems developed at MIT. These projects span real-time computer vision control, ordinal machine learning ranking, and parameterized hardware accelerators built using Bluespec SystemVerilog.</p>
-<hr />
+    <div id="root"><main style="max-width:1100px;margin:0 auto;padding:2rem 1rem;"><header><h1>Graduate Engineering Projects</h1><p><strong>Author:</strong> Ariel Anders, PhD | <strong>Date:</strong> 2015-12-05 | <strong>Category:</strong> Robotics &amp; Hardware</p><p><em>A showcase of advanced graduate-level engineering systems developed at MIT. These projects span real-time computer vision control, ordinal machine learning ranking, and parameterized hardware accelerators built using Bluespec SystemVerilog.</em></p></header><hr /><article><hr />
 <p>Jump to: <a href="#1-autonomous-quadrotor-control-mit-16-30-16-31">Quadrotor</a> | <a href="#2-bounding-box-reranking-mit-6-867-machine-learning">BBox ML</a> | <a href="#3-parameterized-cryptographic-accelerator-mit-6-375-complex-digital-systems">RSA Accelerator</a></p>
 <h2>1. Autonomous Quadrotor Control — MIT 16.30 / 16.31 (C / MATLAB)</h2>
 <h3>Designing Closed-Loop Vision Trajectory Tracking for Micro-Quadrotors</h3>
@@ -164,7 +163,7 @@
 <p>Autonomous flight using low-cost micro-drones poses severe real-time compute and sensor noise constraints. My primary contributions focused on the image processing architecture and integration into the Rolling Spider framework:</p>
 <h4>A. Offline Image Processing & Data Capture Pipeline</h4>
 <ul>
-<li><strong>Yavta Integration:</strong> Developed custom scripts utilizing the Yet Another V4L2 Test Application (<code>yavta</code>) to rapidly capture and download test images directly from the quadcopter.</li>
+<li><strong>Yavta Integration:</strong> Developed custom scripts using the Yet Another V4L2 Test Application (<code>yavta</code>) to rapidly capture and download test images directly from the quadcopter.</li>
 <li><strong>Format Conversion & Testing:</strong> Rendered images in JPEG and raw YUV formats, analyzing luminance (Y) components to separate line targets from varying floor textures without heavy RGB conversion overhead.</li>
 <li><strong>Pixel Offset Calculation:</strong> Implemented a lightweight line detection algorithm iterating over pixel arrays to compute the position-wise pixel offset relative to the center line.</li>
 </ul>
@@ -177,7 +176,7 @@
 <ul>
 <li><strong>Platform:</strong> Parrot Rolling Spider micro quadrotor equipped with a down-facing camera, pressure sensor, and ultrasonic altitude sensor.</li>
 <li><strong>Ground Station Interface:</strong> Custom MATLAB/Simulink and Python communication links transmitting control packets at high refresh rates.</li>
-<li><strong>Experimental Results:</strong> Successfully achieved closed-loop flight tracking across continuous paths and distinct floor markers (such as yellow or black tape) with reliable state estimation.</li>
+<li><strong>Experimental Results:</strong> Achieved closed-loop flight tracking across continuous paths and distinct floor markers (such as yellow or black tape) with reliable state estimation.</li>
 </ul>
 <hr />
 <h2>2. Bounding Box Reranking — MIT 6.867 Machine Learning (Python)</h2>
@@ -192,7 +191,7 @@
 <li><strong>P-Norm Push:</strong> Implemented the P-norm push ranking algorithm, placing higher mathematical penalty on errors at the top of the ranked list so the robot's top choice is correct.</li>
 <li><strong>Experimental Validation:</strong> Evaluated bounding box candidate scoring across real-world cluttered kitchen environments captured by mobile manipulators.</li>
 </ol>
-<p><figure><picture><source srcset="/assets/research/report-ml-lis/fig2_ranking_performance.webp" type="image/webp" /><img src="/assets/research/report-ml-lis/fig2_ranking_performance.png" alt="Performance evaluation showing how our learned weight vectors successfully improve high-precision bounding box candidate scores." loading="lazy" decoding="async" /></picture><figcaption>Performance evaluation showing how our learned weight vectors successfully improve high-precision bounding box candidate scores.</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/report-ml-lis/fig2_ranking_performance.webp" type="image/webp" /><img src="/assets/research/report-ml-lis/fig2_ranking_performance.png" alt="Performance evaluation showing how our learned weight vectors improve high-precision bounding box candidate scores." loading="lazy" decoding="async" /></picture><figcaption>Performance evaluation showing how our learned weight vectors improve high-precision bounding box candidate scores.</figcaption></figure></p>
 <h3>Key Results & Takeaways</h3>
 <ul>
 <li><strong>Superior Candidate Ranking:</strong> Demonstrated significant candidate ranking accuracy improvements compared to baseline linear regression models.</li>

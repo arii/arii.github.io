@@ -155,7 +155,7 @@
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </noscript>
-    <script type="module" crossorigin src="/assets/index-Cx8KGbnl.js"></script>
+    <script type="module" crossorigin src="/assets/index-DLxqFD1w.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-BD-e1e1Q.js">
     <link rel="stylesheet" crossorigin href="/assets/index-DKlfe1vf.css">
   </head>
@@ -180,18 +180,17 @@ Host: boomtick.blog
 <p>The catalyst for VersionTruth was a recurring failure in agentic code review workflows. When deploying targeted reviewer agents—designed for low token usage, minimal context, and fast execution—both primary coding and reviewer agents confidently recommended downgrading <code>actions/checkout</code> to <code>@v4</code>.</p>
 <p>For historical context, <code>v4.1.0</code> was released in September 2023, while <code>v5.0.1</code> launched in November 2025, and subsequent stable releases reached <code>v7.0.0</code>.</p>
 <p><figure><img src="/images/studies/ai-incorrect-v4-suggestion.webp" alt="AI incorrectly flagging v6 as invalid and suggesting a downgrade to v4" loading="lazy" decoding="async" /><figcaption>AI incorrectly flagging v6 as invalid and suggesting a downgrade to v4</figcaption></figure></p>
-<p>This represents a classic out-of-distribution data error. The models encountered version tags (e.g., <code>v6</code>) released after their training cutoffs. Lacking real-time registry access, they hallucinated that the unfamiliar version was invalid and suggested reverting to the latest version present in their training data.</p>
 <p>This failure was not isolated to lightweight models like <code>gpt-4o-mini</code>. Testing confirmed that larger reasoning models, including Gemini 3.1 Pro, exhibited the exact same regression behavior, falsely identifying <code>v4</code> as the latest stable major release.</p>
 <p><figure><img src="/images/studies/github-checkout-v7-release.webp" alt="GitHub Releases showing v7.0.0, confirming versions beyond v4 are stable" loading="lazy" decoding="async" /><figcaption>GitHub Releases showing v7.0.0, confirming versions beyond v4 are stable</figcaption></figure></p>
-<p>While Agentic DevAI increases engineering velocity, this incident highlights the critical need for deterministic, external validation when handling dynamic infrastructure dependencies. Learn more about my <a href="https://arii.github.io/about/">agentic AI tooling consulting</a> services for developer infrastructure.</p>
+<p>The incident is the case for deterministic, external validation of dynamic infrastructure dependencies.</p>
 <h2>The Solution: VersionTruth Architecture</h2>
-<p>Instead of just diagnosing the failure mode, I packaged the live-registry-lookup logic as a small public API called VersionTruth, along with a hosted <code>SKILL.md</code> that tells any agent how to use it. The instruction to the agent is deliberately blunt: if you don't recognize a version string, that's a reason to <em>check</em>, not a reason to <em>revert</em>. Unfamiliarity isn't evidence of error.</p>
+<p>I packaged the live-registry-lookup logic as a small public API called VersionTruth, along with a hosted <code>SKILL.md</code> that tells any agent how to use it. The instruction to the agent is deliberately blunt: if you don't recognize a version string, that's a reason to <em>check</em>, not a reason to <em>revert</em>. Unfamiliarity isn't evidence of error.</p>
 <p><figure><img src="/images/studies/AI_Version_Hallucination_Solution.webp" alt="VersionTruth Solution Architecture" loading="lazy" decoding="async" /><figcaption>VersionTruth Solution Architecture</figcaption></figure></p>
 <p>The API lives as serverless functions sitting next to an existing Vite SPA—operating with zero changes to primary application codebases.</p>
 <pre><code class="language-mermaid">sequenceDiagram
     autonumber
 
-    actor Agent as AI Coding Agent (Jules / Claude)
+    actor Agent as AI Coding Agent (Claude)
     participant Skill as SKILL.md Specification
     participant API as VersionTruth API (Vercel Edge)
     participant Reg as Upstream Registry (npm / GitHub / Node)
@@ -274,6 +273,6 @@ if __name__ == &quot;__main__&quot;:
         sys.exit(1)</code></pre>
 <h3>What's Next: Handling EOL and Deprecation</h3>
 <p>While preventing out-of-distribution downgrades is the immediate fix, the next evolution of VersionTruth will address the opposite problem: agents confidently recommending versions that have reached End-of-Life (EOL) or have been explicitly deprecated by maintainers.</p>
-<p>Future iterations of the <code>/api/compare-version</code> endpoint will expand its upstream registry integrations to query vulnerability databases and deprecation metadata, allowing the <code>isDeprecated</code> flag to proactively guide agents away from unmaintained branches (like Node 18) towards current LTS releases.</p></article></main></div>
+<p>Future iterations of the <code>/api/compare-version</code> endpoint will expand its upstream registry integrations to query vulnerability databases and deprecation metadata, so the <code>isDeprecated</code> flag steers agents away from unmaintained branches (like Node 18) toward current LTS releases.</p></article></main></div>
   </body>
 </html>

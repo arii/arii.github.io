@@ -148,12 +148,12 @@
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </noscript>
-    <script type="module" crossorigin src="/assets/index-Cx8KGbnl.js"></script>
+    <script type="module" crossorigin src="/assets/index-DLxqFD1w.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-BD-e1e1Q.js">
     <link rel="stylesheet" crossorigin href="/assets/index-DKlfe1vf.css">
   </head>
   <body>
-    <div id="root"><main style="max-width:1100px;margin:0 auto;padding:2rem 1rem;"><header><h1>Undergraduate Engineering Projects</h1><p><strong>Author:</strong> Ariel Anders, PhD | <strong>Date:</strong> 2012-06-15 | <strong>Category:</strong> Robotics &amp; Hardware</p><p><em>Archive of foundational undergraduate robotics and embedded hardware projects from UCSC—spanning CMPE 100 logic design, CMPE 121 microprocessor systems, CMPE 118 mechatronics, and custom microcontroller-based LED game side projects.</em></p></header><hr /><article><p>During my undergraduate studies in Computer Engineering at UC Santa Cruz (UCSC), I worked on a wide array of hands-on mechatronics, embedded systems, digital design, and robotics engineering projects. This archive consolidates project demonstrations, technical b-roll footage, and prototype testing videos captured during these foundational years.</p>
+    <div id="root"><main style="max-width:1100px;margin:0 auto;padding:2rem 1rem;"><header><h1>Undergraduate Engineering Projects</h1><p><strong>Author:</strong> Ariel Anders, PhD | <strong>Date:</strong> 2012-06-15 | <strong>Category:</strong> Robotics &amp; Hardware</p><p><em>Archive of foundational undergraduate robotics and embedded hardware projects from UCSC—spanning CMPE 100 logic design, CMPE 121 microprocessor systems, CMPE 118 mechatronics, and custom microcontroller-based LED game side projects.</em></p></header><hr /><article><p>During my undergraduate studies in Computer Engineering at UC Santa Cruz (UCSC), I built hands-on mechatronics, embedded systems, digital design, and robotics projects. This archive collects demos, footage, and prototype tests from those years.</p>
 <hr />
 <h2>CMPE 100: Digital Logic Design</h2>
 <ul>
@@ -167,7 +167,7 @@
 <h2>CMPE 121: Microprocessor System Design</h2>
 <ul>
 <li><strong>Focus:</strong> Microprocessor architecture, memory mapping, peripheral interfacing, and low-level C and Assembly programming.</li>
-<li><strong>Highlights:</strong> Engineered a fully integrated microcontroller-based system, managing custom peripheral drivers, interrupt service routines, and serial communication protocols.</li>
+<li><strong>Highlights:</strong> Built a microcontroller-based system with custom peripheral drivers, interrupt service routines, and serial communication protocols.</li>
 </ul>
 <h3>68HC11 Microcontroller Board for Mechanical Gripper Control</h3>
 <p><strong>Timeline:</strong> Spring 2011 | <strong>Role:</strong> Embedded Systems & Hardware Engineer | <strong>Tech Stack:</strong> Motorola 68HC11, C / Assembly, RS-232 UART, SRAM / EPROM Bus Interfacing, Soldering & Wire-Wrap</p>
@@ -184,7 +184,7 @@
 <h4>Software & Gripper Control Implementation</h4>
 <p>We structured the software to manage real-time communication and hardware feedback loops using the RS-232 communication protocol:</p>
 <ul>
-<li><strong>Pseudo-Force Control:</strong> Motor resistance is regulated by specifying direct current levels. We mapped out eight distinct current settings into their hexadecimal representations, creating a structured command look-up table for both opening and closing actions.</li>
+<li><strong>Pseudo-Force Control:</strong> Pseudo-force control sets motor resistance via direct current levels. We mapped out eight distinct current settings into their hexadecimal representations, creating a structured command look-up table for both opening and closing actions.</li>
 <li><strong>Dynamic Lookup System:</strong> When an operator presses a digital push-button, the program measures the active voltage across the potentiometer and uses that value to index the corresponding open or close command from the lookup table.</li>
 </ul>
 <p><a href="https://www.youtube.com/watch?v=tXif7xeZmGI#no-embed"><figure><img src="/assets/research/undergraduate-projects/gripper_control.webp" alt="68HC11 Microcontroller Board and Mechanical Gripper hardware loops." loading="lazy" decoding="async" /><figcaption>68HC11 Microcontroller Board and Mechanical Gripper hardware loops.</figcaption></figure></a></p>
@@ -212,28 +212,28 @@
 <h4>Engineering Design & Implementation</h4>
 <h5>1. Software Architecture & Control Systems</h5>
 <ul>
-<li><strong>Hierarchical Finite State Machine (FSM)</strong>: Architected and programmed a complex control structure featuring modular sub-state machines (e.g., dedicated centering algorithms and localized sensor-sampling logic).</li>
+<li><strong>Hierarchical Finite State Machine (FSM)</strong>: Built and programmed a control structure with modular sub-state machines (e.g., dedicated centering algorithms and localized sensor-sampling logic).</li>
 </ul>
 <p><figure><picture><source srcset="/assets/research/report-ce118-mechatronics/hierarchical_state_machine.webp" type="image/webp" /><img src="/assets/research/report-ce118-mechatronics/hierarchical_state_machine.png" alt="Hierarchical event-driven state machine architecture governing autonomous robot behavior during arena trials." loading="lazy" decoding="async" /></picture><figcaption>Hierarchical event-driven state machine architecture governing autonomous robot behavior during arena trials.</figcaption></figure></p>
 <ul>
 <li><strong>Ambient-Resilient Event Detection</strong>: Developed a differential sampling state machine for the robot’s IR tape sensors. By capturing active and passive states sequentially, the software calculated ambient light deltas to stabilize detection thresholds under variable environmental lighting.</li>
-<li><strong>Adaptive Battery Voltage Scaling</strong>: Engineered an algorithmic solution to address supply fluctuations (from a 14.4V dual-battery series configuration). Built continuous PWM duty-cycle scaling code utilizing a 10-bit ADC reference to normalize motor outputs relative to a steady 12V operational baseline, ensuring consistent maneuverability and projectile power.</li>
+<li><strong>Adaptive Battery Voltage Scaling</strong>: Engineered an algorithmic solution to address supply fluctuations (from a 14.4V dual-battery series configuration). Built continuous PWM duty-cycle scaling code using a 10-bit ADC reference to normalize motor outputs relative to a steady 12V operational baseline, ensuring consistent maneuverability and projectile power.</li>
 </ul>
 <h5>2. Hardware & Electrical Engineering</h5>
 <ul>
 <li><strong>Mixed-Signal Circuit Debugging</strong>: Led the integration, isolation, and validation of the robot's sensory circuits, including high-pass and low-pass trans-resistive op-amp filter stages to clean noisy phototransistor signals.</li>
-<li><strong>Sensor & Actuator Integration</strong>: Successfully implemented an active-high IR beacon-tracking filter, basic binary bump-sensor networks, a high-current H-bridge driver circuit, and dedicated TIP122 Darlington transistor circuits to govern mechanical subsystems.</li>
+<li><strong>Sensor & Actuator Integration</strong>: Implemented an active-high IR beacon-tracking filter, basic binary bump-sensor networks, a high-current H-bridge driver circuit, and dedicated TIP122 Darlington transistor circuits to govern mechanical subsystems.</li>
 </ul>
 <h5>3. Mechanical Design Strategy</h5>
 <ul>
 <li><strong>Modular Parametric Chassis</strong>: Participated in the collaborative design of a modular CAD framework in SolidWorks. The architecture isolated structural power distribution and drive elements from specialized operational modules, simplifying physical debugging and enabling efficient on-the-fly hardware replacement.</li>
-<li><strong>Servo-Driven Launching Mechanism</strong>: Integrated dual high-velocity toy motors paired with a high-torque servo-actuated feeding mechanism to sequentially chamber and discharge ping-pong projectiles at target vectors.</li>
+<li><strong>Servo-Driven Launching Mechanism</strong>: Integrated dual high-velocity toy motors paired with a high-torque servo-actuated feeding mechanism to chamber and discharge ping-pong projectiles at targets.</li>
 </ul>
 <h4>Key Results & Engineering Takeaways</h4>
 <ul>
-<li><strong>Integration-Driven Development</strong>: Successfully mitigated integration bottlenecks by designing testing harnesses and sub-assembly code in parallel with mechanical builds throughout a 5-week integration runway.</li>
-<li><strong>High-Precision Target Acquisition</strong>: Achieved exceptional accuracy with the projectile launcher, consistently landing multiple impacts on target by relying on dynamic software thresholding to counter complex external ambient light interference.</li>
-<li><strong>Agile Problem Solving</strong>: Overcame a critical, late-stage failure of the robot's primary micro-servos by adapting the physical chassis to house robust, larger-scale servos and utilizing custom ground shielding around signaling lines to eliminate high-current motor noise.</li>
+<li><strong>Integration-Driven Development</strong>: Mitigated integration bottlenecks by designing testing harnesses and sub-assembly code in parallel with mechanical builds throughout a 5-week integration runway.</li>
+<li><strong>High-Precision Target Acquisition</strong>: Consistently landing multiple impacts on target by relying on dynamic software thresholding to counter complex external ambient light interference.</li>
+<li><strong>Agile Problem Solving</strong>: Overcame a critical, late-stage failure of the robot's primary micro-servos by adapting the physical chassis to house robust, larger-scale servos and using custom ground shielding around signaling lines to eliminate high-current motor noise.</li>
 </ul>
 <h4>Downloads</h4>
 <ul>
@@ -256,7 +256,7 @@
 <p><a href="https://www.youtube.com/watch?v=p1W5xtdLUWk#no-embed"><figure><img src="/assets/research/undergraduate-projects/led_game.webp" alt="Microcontroller-Based LED Ring Reaction Game hardware loops. | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=p1W5xtdLUWk#no-embed" loading="lazy" decoding="async" /><figcaption>Microcontroller-Based LED Ring Reaction Game hardware loops. | Watch Full Video Demonstration on YouTube ↗ | https://www.youtube.com/watch?v=p1W5xtdLUWk#no-embed</figcaption></figure></a></p>
 <hr />
 <h2>Technical Summary & Core Takeaways</h2>
-<p>These undergraduate endeavors established my core engineering methodology across:</p>
+<p>These projects built my core engineering approach:</p>
 <ul>
 <li><strong>Embedded C & Microcontrollers:</strong> Low-level register configuration, interrupt-driven I/O, and serial protocols.</li>
 <li><strong>Mechatronics Integration:</strong> Interfacing analog sensors, shaft encoders, DC motors, and stepper drivers.</li>
