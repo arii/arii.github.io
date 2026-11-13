@@ -155,7 +155,7 @@
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </noscript>
-    <script type="module" crossorigin src="/assets/index-CbE7Hd1z.js"></script>
+    <script type="module" crossorigin src="/assets/index-E5u7exuQ.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-BD-e1e1Q.js">
     <link rel="stylesheet" crossorigin href="/assets/index-CfZerplO.css">
   </head>
@@ -164,20 +164,20 @@
 <h2>Origin Story & Architectural Evolution</h2>
 <p>HRM was originally conceived and built during the COVID-19 pandemic for my mother, myself, and our personal trainer, Tim (from FitForLife gym). The goal was to maintain real-time biometric telemetry during remote group workouts when physical gyms were closed. A stable experience took three architectures:</p>
 <h3>Iteration 1: OpenCV Video Loopback</h3>
-<p><figure><img src="/assets/research/hrm/evolve1.webp" alt="Iteration 1" loading="lazy" decoding="async" /><figcaption>Iteration 1</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/hrm/evolve1.webp" type="image/webp" /><img src="/assets/research/hrm/evolve1.webp" alt="Iteration 1" loading="lazy" decoding="async" /></picture><figcaption>Iteration 1</figcaption></figure></p>
 <p>Initially, I captured BLE heart rate data via Python, overlaid a HUD text display onto the active video stream using <code>cv2.putText</code>, and output the composited stream to a <code>v4l2loopback</code> virtual camera device. I quickly abandoned this approach due to cross-platform OS driver fragility (struggling with DirectShow on Windows versus v4l2 on Linux).</p>
 <h3>Iteration 2: Web Bluetooth + OBS VirtualCam</h3>
-<p><figure><img src="/assets/research/hrm/evolve2.webp" alt="Iteration 2" loading="lazy" decoding="async" /><figcaption>Iteration 2</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/hrm/evolve2.webp" type="image/webp" /><img src="/assets/research/hrm/evolve2.webp" alt="Iteration 2" loading="lazy" decoding="async" /></picture><figcaption>Iteration 2</figcaption></figure></p>
 <p>The second iteration used a Web Bluetooth client rendered in a browser window, which I composited into Zoom using OBS Studio VirtualCam. I abandoned this due to Zoom aggressively locking camera devices, video mirroring inconsistencies, and window resize scaling artifacts that broke the HUD alignment.</p>
 <h3>v2 Distributed Topology (2026)</h3>
-<p><figure><img src="/assets/research/hrm/evolve3.webp" alt="Iteration 3" loading="lazy" decoding="async" /><figcaption>Iteration 3</figcaption></figure></p>
-<p><figure><img src="/assets/research/hrm/client_connect.webp" alt="Client Connection" loading="lazy" decoding="async" /><figcaption>Client Connection</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/hrm/evolve3.webp" type="image/webp" /><img src="/assets/research/hrm/evolve3.webp" alt="Iteration 3" loading="lazy" decoding="async" /></picture><figcaption>Iteration 3</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/hrm/client_connect.webp" type="image/webp" /><img src="/assets/research/hrm/client_connect.webp" alt="Client Connection" loading="lazy" decoding="async" /></picture><figcaption>Client Connection</figcaption></figure></p>
 <p>The final architecture moved to a decoupled, multi-client web topology. Browser clients stream BLE telemetry to a persistent WebSocket server, relaying active zone metrics, calorie calculations, and Tabata timer state to a unified trainer dashboard.</p>
 <h2>The DevAI Catalyst (v1 -> v2 Rewrite)</h2>
 <p>Refactoring the multi-client WebSocket topology and complex Web Bluetooth mock states in v2 became tedious to verify manually. Managing continuous multi-client refactors directly prompted me to build RepoAuditor and automated PR review bots in GitHub Actions. Using GitHub Actions, Gemini-powered PR reviews, and automated visual regression testing (Playwright), I validated complex Web Bluetooth mock states and UI layout integrity across updates.</p>
 <h2>Core Technical Implementation</h2>
 <h3>Web Bluetooth GATT Lifecycle & Decoding</h3>
-<p><figure><img src="/assets/research/hrm/browser_capability.webp" alt="Browser Capability" loading="lazy" decoding="async" /><figcaption>Browser Capability</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/hrm/browser_capability.webp" type="image/webp" /><img src="/assets/research/hrm/browser_capability.webp" alt="Browser Capability" loading="lazy" decoding="async" /></picture><figcaption>Browser Capability</figcaption></figure></p>
 <p>The foundation relies on the Web Bluetooth API to connect with peripheral sensors using the standard Bluetooth 4.0 / ANT+ Heart Rate Profile.</p>
 <p>The client lifecycle begins by scanning for devices advertising the Heart Rate Service (UUID <code>0x180D</code>). Once connected, it subscribes to the Heart Rate Measurement Characteristic (<code>0x2A37</code>). The incoming data streams as a raw byte buffer. I decode the flags byte in real-time to determine if the HR value is 8-bit or 16-bit, and to extract optional fields like energy expended or RR-interval buffers. The client includes an auto-reconnect handler that gracefully manages transient signal losses.</p>
 <h3>Zone Engine</h3>
@@ -193,16 +193,16 @@
 <h3>WebSocket Protocol & Stale Data Guardrails</h3>
 <p>Multi-client synchronization is handled over Socket.io. To maintain a reliable dashboard, I engineered strict stale data guardrails and heartbeat handling. If telemetry from a client ceases for more than 4 seconds, the dashboard displays <code>--</code>. If the client remains inactive for over 30 seconds, the user's card automatically unmounts from the instructor's grid to prevent clutter.</p>
 <h3>Mock Simulator Test Harness</h3>
-<p><figure><img src="/assets/research/hrm/mock.webp" alt="Mock Simulator" loading="lazy" decoding="async" /><figcaption>Mock Simulator</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/hrm/mock.webp" type="image/webp" /><img src="/assets/research/hrm/mock.webp" alt="Mock Simulator" loading="lazy" decoding="async" /></picture><figcaption>Mock Simulator</figcaption></figure></p>
 <p>To ensure the system could scale and handle network jitter, I built a dedicated mocking engine (<code>/hrm_mock</code>). This simulator allows for multi-user stress testing and synthetic biometric signal generation without requiring physical peripherals.</p>
 <h3>Synchronized Workout Intervals & Spotify API</h3>
-<p><figure><img src="/assets/research/hrm/running.webp" alt="Running Application" loading="lazy" decoding="async" /><figcaption>Running Application</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/hrm/running.webp" type="image/webp" /><img src="/assets/research/hrm/running.webp" alt="Running Application" loading="lazy" decoding="async" /></picture><figcaption>Running Application</figcaption></figure></p>
 <p>The central server orchestrates a synchronized Tabata HIIT timer (countdown, work intervals, rest periods, audio feedback beeps) across all client views, guaranteeing sub-100ms latency for state replication.</p>
 <p>Furthermore, I integrated the Spotify API and Web Playback SDK to synchronize music with the active workout state using OAuth PKCE for client-side token negotiation. A background token refresh loop maintains an uninterrupted session. It controls playback in real time, synced to the HIIT intervals, automatically adjusting playback based on the current timer phase.</p>
 <h3>Interactive Controls & Analytics</h3>
 <p>The live application has interactive controls with a dual-mode timer (Tabata vs. Stopwatch), audio feedback cues, and in-browser Spotify player token management. I also built a workout history and analytics persistence layer that tracks elapsed duration, active calories burned, and historical session logs across multiple dates.</p>
 <h2>System Topology</h2>
-<p><figure><img src="/assets/research/hrm/hrm_server.webp" alt="HRM Server Dashboard" loading="lazy" decoding="async" /><figcaption>HRM Server Dashboard</figcaption></figure></p>
+<p><figure><picture><source srcset="/assets/research/hrm/hrm_server.webp" type="image/webp" /><img src="/assets/research/hrm/hrm_server.webp" alt="HRM Server Dashboard" loading="lazy" decoding="async" /></picture><figcaption>HRM Server Dashboard</figcaption></figure></p>
 <p>Data flow: biometric peripheral → web client → servers and external APIs.</p>
 <pre><code class="language-mermaid">flowchart TD
     subgraph Client [&quot;Client Device (Browser)&quot;]
