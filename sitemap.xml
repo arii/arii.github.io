@@ -323,6 +323,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://arii.github.io/research/feels/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://arii.github.io/assets/research/feels.gif</image:loc>
+      <image:title>Feels: Teaching a Robot to Feel</image:title>
+      <image:caption>Feels live demo: the robot arm lifts and swirls a sealed cup, followed by the signature space: 110 taught signatures projected to 2-D via PCA, colored by material</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>https://arii.github.io/devai/gitops-pr-reviewer/</loc>
     <lastmod>2026-11-13</lastmod>
     <image:image>
@@ -533,6 +543,16 @@
       <image:loc>https://arii.github.io/assets/research/robocon.webp</image:loc>
       <image:title>RoboCon MIT</image:title>
       <image:caption>RoboCon event portal showcase</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</image:license>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://arii.github.io/devai/sf-promises/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://arii.github.io/assets/research/sf-promises/verdict-board.webp</image:loc>
+      <image:title>SF Promises: Sourced Verdicts on San Francisco</image:title>
+      <image:caption>SF Promises demo: outcome distribution of 54 verified promises across kept, in progress, broken, and undecided</image:caption>
       <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</image:license>
     </image:image>
   </url>
