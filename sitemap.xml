@@ -326,9 +326,9 @@
     <loc>https://arii.github.io/research/feels/</loc>
     <lastmod>2026-11-17</lastmod>
     <image:image>
-      <image:loc>https://arii.github.io/assets/research/feels.webp</image:loc>
+      <image:loc>https://arii.github.io/feels/images/feels_web.mp4</image:loc>
       <image:title>Feels: Teaching a Robot to Feel</image:title>
-      <image:caption>Feels live demo: the robot arm lifts and swirls a sealed cup, followed by the signature space: 110 taught signatures projected to 2-D via PCA, colored by material</image:caption>
+      <image:caption>Feels teaser: an xArm lifts and swirls a sealed cup, then predicts the contents from joint torques (30 seconds, silent)</image:caption>
       <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</image:license>
     </image:image>
   </url>
